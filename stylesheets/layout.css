@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-family: 'ABCMonumentGrotesk', sans-serif;
+  font-size: 20px;
+}
+
+.mainMenu {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.6vw 6vw;
+}
+
+.blockMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.mainMenuLink {
+  font-size: 1.1vw;
+  color: #2a2a2a;
+  text-decoration: none;
+  transition: all ease 0.6s;
+}
+.mainMenuLink.active {
+  color: #2a2a2a;
+  text-decoration: underline;
+  text-decoration-color: #2a2a2a;
+}
+.mainMenuLink.active:hover {
+  color: #2a2a2a;
+  text-decoration-color: #2a2a2a;
+}
+.mainMenuLink:hover {
+  color: #919191;
+}
+
+.logo {
+  margin-top: -0.2vw;
+  height: 1.6vw;
+  width: 1.6vw;
+}
