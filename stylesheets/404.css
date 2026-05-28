@@ -1,0 +1,139 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  font-family: 'PT Root UI';
+}
+.stars {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.star {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #f4ede0;
+  animation: stars linear infinite;
+}
+@keyframes stars {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+}
+
+.text {
+  width: 50%;
+  font-size: 1.5vw;
+  padding: 2.2vw;
+  background-color: #252525;
+  color: #f4ede0;
+  border: 1px solid #a17625;
+  border-radius: 1vw;
+  line-height: 134%;
+}
+.text a {
+  color: #ffc252;
+}
+.error {
+  width: 40%;
+}
+.error h1 {
+  color: #929292;
+  font-size: 16vw;
+  text-align: center;
+  text-shadow: 0 0 6vw #787878;
+  transition:
+    color ease 0.5s,
+    text-shadow ease 1.2s;
+}
+.error h1.active {
+  color: #ffc252;
+  text-shadow: 0 0 10vw #ffc252;
+  animation: fire 2s linear infinite alternate;
+}
+@keyframes fire {
+  0% {
+    text-shadow: 0 0 10vw #ffc252;
+  }
+  100% {
+    text-shadow: 0 0 12vw #e0a83f;
+  }
+}
+.error p {
+  color: #a17625;
+  font-size: 2.6vw;
+  text-align: center;
+}
+.buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  width: 40%;
+  padding: 1.6vw 2vw;
+  border-radius: 1vw;
+  font-size: 2vw;
+}
+.link {
+  background-color: #252525;
+  color: #f4ede0;
+  border: 1px solid #f4ede0;
+  transition: all ease 0.5s;
+}
+.link:hover {
+  background-color: #a17625;
+  color: #f4ede0;
+  border: 1px solid #a17625;
+}
+.fire {
+  background-color: #929292;
+  color: #f4ede0;
+  border: 1px solid #929292;
+  transition: all ease 0.5s;
+}
+.fire:hover {
+  background-color: #787878;
+  color: #f4ede0;
+  border: 1px solid #787878;
+}
+.fire.active {
+  background-color: #ffc252;
+  color: #242424;
+  border: 1px solid #ffc252;
+}

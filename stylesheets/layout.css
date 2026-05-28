@@ -50,3 +50,120 @@ body {
   height: 1.6vw;
   width: 1.6vw;
 }
+
+/* магазин */
+
+/* магазин */
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5vw;
+  width: 90%;
+  margin: 3vw auto 5vw auto;
+}
+
+.product {
+  grid-column: span 2;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Нижний ряд (шоппер и бокс) делят пространство 50/50 */
+.product.large {
+  grid-column: span 3;
+}
+
+.badge-new {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  background-color: #fff;
+  padding: 0.4vw 0.8vw;
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: #222;
+}
+
+.product-img-wrapper {
+  padding: 2vw;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 1.5vw 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.productInfo h3 {
+  font-weight: 500;
+  font-size: 1.1vw;
+  margin: 0;
+  color: #222;
+}
+
+.productInfo p {
+  font-size: 1.1vw;
+  margin: 0;
+  color: #222;
+}
+
+/* Стили рекламных блоков */
+.promo-bar {
+  grid-column: 1 / -1;
+  background-color: #6fb000;
+  color: #fff;
+  text-align: center;
+  padding: 1.2vw;
+  font-size: 1.2vw;
+  width: 100%;
+  letter-spacing: 0.05em;
+}
+
+.promo-block {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-top {
+  background-color: #efefef;
+  text-align: center;
+  font-size: 4vw;
+  padding: 2vw;
+  color: #222;
+  letter-spacing: 0.05em;
+}
+
+.promo-bottom {
+  background-color: #6fb000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vw 6vw;
+  color: #222;
+}
+
+.promo-title {
+  font-size: 4vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.promo-desc {
+  font-size: 1.4vw;
+  line-height: 1.3;
+}
