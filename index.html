@@ -18,13 +18,13 @@
         <a class="mainMenuLink" href="events.html">СОБЫТИЯ</a>
       </div>
       <img class="logo" src="./images/icon.svg" alt="logo" />
-      <div class="blockMenu">
+      <div class="blockMenu2">
         <a class="mainMenuLink" href="shop.html">МАГАЗИН</a>
-        <a class="mainMenuLink" href="jobs.html">ВАКАНСИИ</a>
-        <a class="mainMenuLink" href="insects.html">НАСЕКОМЫЕ</a>
+        <a class="mainMenuLink" href="insects.html">ОБИТАТЕЛИ</a>
       </div>
     </nav>
 
+<<<<<<< Updated upstream
     <main class="homePage">
       <section class="heroSection">
         <img src="./images/renders/LakeAndAnthill.png" alt="Микропарк" />
@@ -158,5 +158,355 @@
         </form>
       </div>
     </footer>
+=======
+    <!-- главный экран -->
+    <main>
+      <img src="images/section-1.png" alt="" />
+      <h1>МИКРОПАРК</h1>
+    </main>
+
+    <!-- секция 1 -->
+    <section class="section_1">
+      <div class="about">
+        <h3>О нас</h3>
+        <p>
+          Микропарк — это необычное место для отдыха на природе. Чтобы сюда
+          попасть, люди уменьшаются в сто раз. Здесь окружающий мир становится
+          огромным: мох похож на кусты, капли воды — на лужи, а камни напоминают
+          огромные скалы. Добро пожаловать!
+        </p>
+        <button
+          class="button"
+          id="ticketModalOpen"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="ticketModal"
+        >
+          Купить билет
+        </button>
+      </div>
+    </section>
+
+    <!-- секция с вопросами -->
+    <section class="section_2">
+      <h3>Главное</h3>
+
+      <div class="faqList">
+        <article class="faqItem">
+          <button
+            class="faqQuestion"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-tickets"
+          >
+            <span>Билеты</span>
+            <span class="faqIcon" aria-hidden="true"></span>
+          </button>
+          <div class="faqAnswer" id="faq-tickets">
+            <div>
+              <p>
+                Билеты можно купить заранее на сайте или в кассе у входа. Детям
+                до пяти лет вход бесплатный.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="faqItem">
+          <button
+            class="faqQuestion"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-address"
+          >
+            <span>Адрес</span>
+            <span class="faqIcon" aria-hidden="true"></span>
+          </button>
+          <div class="faqAnswer" id="faq-address">
+            <div>
+              <p>
+                Микропарк находится по адресу: Прилесная улица, 52. Ближайшая
+                станция МЦД-1 — Одинцово.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="faqItem">
+          <button
+            class="faqQuestion"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-contacts"
+          >
+            <span>Контакты</span>
+            <span class="faqIcon" aria-hidden="true"></span>
+          </button>
+          <div class="faqAnswer" id="faq-contacts">
+            <div>
+              <p>
+                Позвоните нам по номеру +7 (800) 698-90-80 или напишите на
+                micropark@mail.ru. Мы отвечаем ежедневно.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="faqItem">
+          <button
+            class="faqQuestion"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-pets"
+          >
+            <span>Можно ли с питомцами?</span>
+            <span class="faqIcon" aria-hidden="true"></span>
+          </button>
+          <div class="faqAnswer" id="faq-pets">
+            <div>
+              <p>
+                Да, если питомец находится на поводке. Просим обходить зоны
+                наблюдения за насекомыми и убирать за животным.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--секция 3  -->
+    <section class="section_3">
+      <div class="adventureHeading">
+        <h2>Здесь отдых становится</h2>
+        <h2>приключением</h2>
+      </div>
+
+      <div class="adventureLayout">
+        <figure class="adventureImage adventureImageMain">
+          <img src="images/insects/waterStrider.png" alt="Водомерка" />
+        </figure>
+
+        <div class="adventureContent">
+          <p>
+            В Микропарке живут большие насекомые, которым посвящены отдельные
+            зоны. Их можно подробно изучить на интерактивной карте.
+          </p>
+          <a href="map.html" class="button">Узнать больше</a>
+        </div>
+
+        <figure class="adventureImage adventureImageSecondary">
+          <img src="images/renders/caterpillers.png" alt="Гусеницы" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- события -->
+    <section class="section_4">
+      <h3>Ближайшие события</h3>
+      <div class="events">
+        <article class="eventCard">
+          <div class="eventMeta">
+            <span class="eventTag">Экскурсия</span>
+            <time datetime="2026-06-27">27 июн, 2026</time>
+          </div>
+          <img
+            src="images/posters/halftone1.png"
+            alt="Афиша прогулки со стрекозами"
+          />
+          <h4>Знакомство со стрекозами</h4>
+          <a
+            class="button eventCardButton"
+            href="events.html"
+            aria-label="Подробнее о знакомстве со стрекозами"
+            >Подробнее</a
+          >
+        </article>
+
+        <article class="eventCard">
+          <div class="eventMeta">
+            <span class="eventTag">Мастер-класс</span>
+            <time datetime="2026-07-04">04 июл, 2026</time>
+          </div>
+          <img
+            src="images/posters/plasticine2.png"
+            alt="Афиша мастер-класса с пластилиновой пчелой"
+          />
+          <h4>Слепи жителя Микропарка</h4>
+          <a
+            class="button eventCardButton"
+            href="events.html"
+            aria-label="Подробнее о мастер-классе по лепке"
+            >Подробнее</a
+          >
+        </article>
+
+        <article class="eventCard">
+          <div class="eventMeta">
+            <span class="eventTag">Лекция</span>
+            <time datetime="2026-07-12">12 июл, 2026</time>
+          </div>
+          <img
+            src="images/posters/microscope3.png"
+            alt="Афиша лекции о микромире"
+          />
+          <h4>Микромир под объективом</h4>
+          <a
+            class="button eventCardButton"
+            href="events.html"
+            aria-label="Подробнее о лекции про микромир"
+            >Подробнее</a
+          >
+        </article>
+
+        <article class="eventCard">
+          <div class="eventMeta">
+            <span class="eventTag">Экскурсия</span>
+            <time datetime="2026-07-19">19 июл, 2026</time>
+          </div>
+          <img
+            src="images/posters/halftone2.png"
+            alt="Афиша экскурсии по Микропарку"
+          />
+          <h4>По следам больших насекомых</h4>
+          <a
+            class="button eventCardButton"
+            href="events.html"
+            aria-label="Подробнее об экскурсии по парку"
+            >Подробнее</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- карта -->
+    <section class="section_5">
+      <h3>Мы на карте</h3>
+      <div class="map">
+        <div class="mapEmbed" aria-label="Карта проезда к Микропарку">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01c25f0030a46891ed7d4246087b6fef55ee49e8f1d2f6ea7738fda66f6b2acc&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+
+        <div class="mapInfo">
+          <span class="mapInfoLabel">Адрес</span>
+          <h4>Прилесная, 52</h4>
+          <p>
+            Добраться до нас можно по МЦД-1 до станции Одинцово, на машине или
+            на автобусе Микропарка.
+          </p>
+          <p class="mapInfoRoute">
+            Одинцово · южный вход в парк · остановка «Прилесная»
+          </p>
+          <div class="mapActions">
+            <a class="button mapRouteButton" href="map.html">Открыть маршрут</a>
+            <a
+              class="button mapRouteButton"
+              href="images/map.svg"
+              download="map-micropark.svg"
+            >
+              Скачать карту
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog
+      class="ticketModal"
+      id="ticketModal"
+      aria-labelledby="ticketModalTitle"
+    >
+      <div class="ticketModalContent">
+        <button
+          class="ticketModalClose"
+          type="button"
+          aria-label="Закрыть окно"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="ticketModalHeading">
+          <p>Билеты в Микропарк</p>
+          <h2 id="ticketModalTitle">Запланируйте визит</h2>
+        </div>
+
+        <form class="ticketForm">
+          <label>
+            <span>Имя</span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              placeholder="Как к вам обращаться"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Электронная почта</span>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="example@example.com"
+              required
+            />
+          </label>
+
+          <div class="ticketFormRow">
+            <label>
+              <span>Дата визита</span>
+              <input type="date" name="date" required />
+            </label>
+
+            <label>
+              <span>Количество</span>
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </label>
+          </div>
+
+          <button class="button ticketFormSubmit" type="submit">
+            Оформить билет
+          </button>
+          <p class="ticketFormStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </dialog>
+>>>>>>> Stashed changes
   </body>
+
+  <!-- футер -->
+  <footer class="siteFooter">
+    <div class="footerColumn">
+      <a href="tel:+78006989080">+7 (800) 698-90-80</a>
+      <p>Круглосуточная связь</p>
+      <a href="mailto:micropark@mail.ru">MICROPARK@MAIL.RU</a>
+      <p>Поддержка</p>
+    </div>
+    <div class="footerColumn">
+      <h2>ПОСЕТИТЕЛЯМ</h2>
+      <a href="map.html">Интерактивная карта</a>
+      <a href="events.html">События</a>
+      <a href="shop.html">Магазин</a>
+    </div>
+    <div class="footerColumn footerSubscribe">
+      <h2>НОВОСТИ</h2>
+      <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
+      <form>
+        <input type="email" placeholder="example@example.com" />
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+  </footer>
 </html>

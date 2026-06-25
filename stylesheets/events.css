@@ -1,0 +1,688 @@
+.eventsPage {
+  height: auto;
+  min-height: 100%;
+  background-color: #f8f8f8;
+}
+
+.eventsCatalog {
+  width: 100%;
+  padding: 6.8vw 5.8vw 7vw;
+}
+
+.eventsCatalog > h1,
+.eventsCatalogSection > h2 {
+  max-width: 76vw;
+  margin: 0 0 3.6vw;
+  padding: 0;
+  font-family: 'ABC MonumentGrotesk Mono', monospace;
+  font-size: 48px;
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.eventsCatalogGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  gap: 3.4vw 1vw;
+  align-items: start;
+}
+
+.eventsCatalogSection {
+  margin-top: 6.6vw;
+}
+
+.eventsWorkshopGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.6vw 1vw;
+  align-items: start;
+}
+
+.eventsProgramGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.6vw 1vw;
+  align-items: start;
+}
+
+.eventsCatalogCard {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 0.85vw;
+  border-radius: 8px;
+  background-color: #ececeb;
+  transition: background-color ease 0.25s;
+}
+
+.eventsCatalogCard:hover {
+  background-color: #e3e3e1;
+}
+
+.eventsCatalogMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7vw;
+  min-height: 2vw;
+  margin-bottom: 1.2vw;
+  color: #737373;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: clamp(8px, 0.6vw, 11px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.eventsCatalogMeta span {
+  padding: 0.45vw 0.65vw;
+  border: 1px solid #b8b8b5;
+  border-radius: 8px;
+}
+
+.eventsCatalogMeta time {
+  white-space: nowrap;
+}
+
+.eventsCatalogCard img {
+  display: block;
+  width: 64%;
+  aspect-ratio: 0.707 / 1;
+  margin: 0 auto 1vw;
+  object-fit: cover;
+  box-shadow: 0 0.4vw 1vw rgb(0 0 0 / 0.04);
+}
+
+.eventsCatalogCard h2 {
+  margin-top: 0;
+  margin-bottom: 0.75vw;
+  color: #292929;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: clamp(12px, 0.88vw, 17px);
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.eventsCatalogCard .eventCardButton {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 2.8vw;
+  margin-top: 0;
+  padding: 0 0.85vw;
+  font-size: clamp(9px, 0.68vw, 11px);
+}
+
+.eventsCatalogCard .eventCardButton::after {
+  content: '↗';
+}
+
+.eventsCatalogCard .eventCardButton:hover::after,
+.eventsCatalogCard .eventCardButton:focus-visible::after {
+  transform: translate(2px, -2px);
+}
+
+.eventsCatalogCardOne {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.eventsCatalogCardTwo {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.eventsCatalogCardThree {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.eventsCatalogIntro {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  padding-top: 0.2vw;
+}
+
+.eventsCatalogIntro p,
+.eventsWorkshopText p {
+  max-width: 32vw;
+  color: #5d5d5d;
+  font-size: clamp(14px, 1vw, 18px);
+  line-height: 1.35;
+}
+
+.eventsCatalogCardFour {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.eventsCatalogCardFive {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.eventsWorkshopCardOne {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.eventsWorkshopText {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.eventsWorkshopText p {
+  max-width: 19vw;
+}
+
+.eventsWorkshopCardTwo {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.eventsWorkshopCardThree {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.eventsWorkshopCardFour {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.eventsFeature {
+  display: flex;
+  min-width: 0;
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  flex-direction: column;
+  padding: 1.45vw;
+  background-color: #333333;
+  color: #f3f3f3;
+  text-decoration: none;
+  transition:
+    background-color ease 0.25s,
+    color ease 0.25s;
+}
+
+.eventsFeature:hover,
+.eventsFeature:focus-visible {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.eventsFeature .eventsCatalogMeta {
+  margin-bottom: 1.35vw;
+  color: #d4d4d4;
+}
+
+.eventsFeature .eventsCatalogMeta span {
+  border-color: #7c7c7c;
+}
+
+.eventsFeature img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.64 / 1;
+  object-fit: cover;
+  filter: invert(1) sepia(1) saturate(8) hue-rotate(62deg) contrast(1.2);
+}
+
+.eventsFeature h2 {
+  margin-top: 1.8vw;
+  color: currentColor;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: clamp(14px, 1vw, 20px);
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.eventsFeature h2::after {
+  content: ' ↗';
+}
+
+.eventsPhotoSection {
+  margin: 7vw calc(-1 * 5.8vw) 0;
+  overflow: hidden;
+}
+
+.eventsPhotoSection > h2 {
+  margin: 0 5.8vw 2.4vw;
+  padding: 0;
+  font-family: 'ABC MonumentGrotesk Mono', monospace;
+  font-size: 44px;
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.eventsPhotoMarquee {
+  overflow: hidden;
+}
+
+.eventsPhotoMarquee + .eventsPhotoMarquee {
+  margin-top: 1vw;
+}
+
+.eventsPhotoMarquee:hover .eventsPhotoTrack,
+.eventsPhotoMarquee:focus-within .eventsPhotoTrack {
+  animation-play-state: paused;
+}
+
+.eventsPhotoTrack {
+  display: flex;
+  width: max-content;
+  gap: 1vw;
+  animation: events-photo-marquee 42s linear infinite;
+  will-change: transform;
+}
+
+.eventsPhotoMarqueeReverse .eventsPhotoTrack {
+  animation-direction: reverse;
+  animation-duration: 54s;
+}
+
+.eventsPhotoTrack img {
+  display: block;
+  flex: 0 0 auto;
+  width: 31vw;
+  height: 15.5vw;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.03);
+}
+
+.eventsPhotoTrack img.wide {
+  width: 38vw;
+}
+
+.eventsProgramText {
+  display: flex;
+  min-height: 19.2vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.eventsProgramText p {
+  max-width: 22vw;
+  color: #5d5d5d;
+  font-size: clamp(14px, 1vw, 18px);
+  line-height: 1.35;
+}
+
+.eventsTicketButton {
+  width: 100%;
+  max-width: 18vw;
+  margin-top: 3vw;
+}
+
+.eventsToursCardOne {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.eventsToursText {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.eventsToursCardTwo {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.eventsToursCardThree {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.eventsToursCardFour {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.eventsLabFeature {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+.eventsLabFeature img {
+  background-color: #f8f8f8;
+  filter: none;
+}
+
+.eventsWalksCardOne {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.eventsWalksText {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: auto;
+}
+
+.eventsWalksCardTwo {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+@keyframes events-photo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .eventsCatalog {
+    padding-top: 96px;
+  }
+
+  .eventsCatalog > h1,
+  .eventsCatalogSection > h2 {
+    max-width: 700px;
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+
+  .eventsCatalogSection {
+    margin-top: 72px;
+  }
+
+  .eventsCatalogGrid,
+  .eventsWorkshopGrid,
+  .eventsProgramGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 18px;
+  }
+
+  .eventsCatalogCard,
+  .eventsCatalogCardOne,
+  .eventsCatalogCardTwo,
+  .eventsCatalogCardThree,
+  .eventsCatalogCardFour,
+  .eventsCatalogCardFive,
+  .eventsWorkshopCardOne,
+  .eventsWorkshopCardTwo,
+  .eventsWorkshopCardThree,
+  .eventsWorkshopCardFour,
+  .eventsToursCardOne,
+  .eventsToursCardTwo,
+  .eventsToursCardThree,
+  .eventsToursCardFour,
+  .eventsWalksCardOne,
+  .eventsWalksCardTwo {
+    grid-column: auto;
+    grid-row: auto;
+    padding: 14px;
+  }
+
+  .eventsCatalogMeta {
+    min-height: 30px;
+    margin-bottom: 18px;
+    font-size: 9px;
+  }
+
+  .eventsCatalogMeta span {
+    padding: 7px 9px;
+  }
+
+  .eventsCatalogCard img {
+    margin-bottom: 18px;
+  }
+
+  .eventsCatalogCard h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .eventsCatalogCard .eventCardButton {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .eventsCatalogIntro {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    padding: 18px 0 30px;
+  }
+
+  .eventsCatalogIntro p,
+  .eventsWorkshopText p {
+    max-width: 540px;
+    font-size: 16px;
+  }
+
+  .eventsWorkshopText {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 8px;
+  }
+
+  .eventsFeature {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 18px;
+  }
+
+  .eventsFeature .eventsCatalogMeta {
+    margin-bottom: 18px;
+  }
+
+  .eventsFeature h2 {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+
+  .eventsPhotoSection {
+    margin-top: 72px;
+  }
+
+  .eventsPhotoSection > h2 {
+    margin-bottom: 32px;
+    font-size: 42px;
+  }
+
+  .eventsPhotoTrack {
+    gap: 18px;
+  }
+
+  .eventsPhotoTrack img {
+    width: 420px;
+    height: 220px;
+  }
+
+  .eventsPhotoTrack img.wide {
+    width: 520px;
+  }
+
+  .eventsProgramText,
+  .eventsToursText,
+  .eventsWalksText,
+  .eventsLabFeature {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .eventsProgramText {
+    min-height: auto;
+    padding: 8px 0 28px;
+  }
+
+  .eventsProgramText p {
+    max-width: 540px;
+    font-size: 16px;
+  }
+
+  .eventsTicketButton {
+    max-width: 270px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .eventsCatalog {
+    padding: 88px 18px 72px;
+  }
+
+  .eventsCatalog > h1,
+  .eventsCatalogSection > h2 {
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  .eventsCatalogSection {
+    margin-top: 56px;
+  }
+
+  .eventsCatalogGrid,
+  .eventsWorkshopGrid,
+  .eventsProgramGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .eventsCatalogCard {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .eventsCatalogCard img {
+    width: 62%;
+  }
+
+  .eventsCatalogCard h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .eventsCatalogCard .eventCardButton {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .eventsCatalogIntro {
+    grid-column: auto;
+    grid-row: auto;
+    order: 0;
+    padding: 18px 0 26px;
+  }
+
+  .eventsCatalogIntro p,
+  .eventsWorkshopText p {
+    max-width: 390px;
+    font-size: 15px;
+  }
+
+  .eventsWorkshopText,
+  .eventsFeature {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .eventsWorkshopText {
+    padding: 2px 0 10px;
+  }
+
+  .eventsFeature {
+    padding: 14px;
+  }
+
+  .eventsFeature img {
+    aspect-ratio: 1.25 / 1;
+  }
+
+  .eventsPhotoSection {
+    margin: 58px -18px 0;
+  }
+
+  .eventsPhotoSection > h2 {
+    margin: 0 18px 26px;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .eventsPhotoTrack {
+    gap: 12px;
+    animation-duration: 34s;
+  }
+
+  .eventsPhotoMarqueeReverse .eventsPhotoTrack {
+    animation-duration: 44s;
+  }
+
+  .eventsPhotoTrack img,
+  .eventsPhotoTrack img.wide {
+    width: 82vw;
+    height: 52vw;
+  }
+
+  .eventsProgramText {
+    padding: 4px 0 14px;
+  }
+
+  .eventsProgramText p {
+    max-width: 390px;
+    font-size: 15px;
+  }
+
+  .eventsTicketButton {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .eventsPage .siteFooter {
+    flex-direction: column;
+    gap: 34px;
+    padding: 42px 18px;
+  }
+
+  .eventsPage .footerColumn,
+  .eventsPage .footerSubscribe {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .eventsPage .footerColumn h2,
+  .eventsPage .footerColumn a {
+    font-size: 13px;
+  }
+
+  .eventsPage .footerColumn p {
+    font-size: 12px;
+  }
+
+  .eventsPage .footerSubscribe form {
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  .eventsPage .footerSubscribe input {
+    width: 100%;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .eventsPage .footerSubscribe button {
+    padding: 13px 18px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eventsPhotoTrack {
+    animation: none;
+  }
+}

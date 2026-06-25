@@ -1,8 +1,24 @@
 @font-face {
-  font-family: 'ABCMonumentGrotesk';
+  font-family: 'ABC MonumentGrotesk Mono';
   src:
     url('../fonts/ABCMonumentGroteskCyrillicMono-Regular-Trial.woff')
       format('woff'),
     url('../fonts/ABCMonumentGroteskCyrillicMono-Regular-Trial.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'ABC MonumentGrotesk Regular';
+  src:
+    url('../fonts/ABCMonumentGroteskCyrillic-Regular-Trial.woff') format('woff'),
+    url('../fonts/ABCMonumentGroteskCyrillic-Regular-Trial.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'ABC MonumentGrotesk Medium';
+  src:
+    url('../fonts/ABCMonumentGroteskCyrillic-Medium-Trial.woff') format('woff'),
+    url('../fonts/ABCMonumentGroteskCyrillic-Medium-Trial.woff2')
       format('woff2');
 }

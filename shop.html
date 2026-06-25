@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Магазин</title>
+    <title>Магазин — Микропарк</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+<<<<<<< Updated upstream
     <script src="javascripts/scripts.js" defer></script>
+=======
+    <link rel="stylesheet" href="stylesheets/shop.css" />
+>>>>>>> Stashed changes
     <script src="javascripts/shop.js" defer></script>
   </head>
-  <body>
+
+  <body class="shopPage">
     <div id="burger"></div>
     <nav class="mainMenu">
       <div class="blockMenu">
@@ -19,14 +24,44 @@
       <img class="logo" src="./images/icon.svg" alt="logo" />
       <div class="blockMenu">
         <a class="mainMenuLink active" href="shop.html">МАГАЗИН</a>
+<<<<<<< Updated upstream
         <a class="mainMenuLink" href="jobs.html">ВАКАНСИИ</a>
         <a class="mainMenuLink" href="insects.html">НАСЕКОМЫЕ</a>
         <a class="mainMenuLink cartLink" href="#shop-footer"
           >Корзина: <span class="productCnt">0</span></a
         >
+=======
+        <a class="mainMenuLink" href="insects.html">ОБИТАТЕЛИ</a>
+        <span class="headerCartCount" aria-label="Товаров в корзине">
+          (<span id="cartCount">1</span>)
+        </span>
+>>>>>>> Stashed changes
       </div>
     </nav>
+    <div class="promoMarquee">
+      <div class="promoMarqueeTrack">
+        <div class="promoMarqueeGroup">
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+        </div>
+        <div class="promoMarqueeGroup" aria-hidden="true">
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+          <span>Скидка 10% по промокоду МИКРОМИР</span>
+        </div>
+      </div>
+    </div>
+    <main class="shopMain">
+      <aside class="shopCategories" aria-label="Категории товаров">
+        <a class="active" href="#clothes" data-category-link="clothes"
+          >Одежда</a
+        >
+        <a href="#things" data-category-link="things">Мелочи</a>
+        <a href="#gifts" data-category-link="gifts">Подарки</a>
+      </aside>
 
+<<<<<<< Updated upstream
     <main class="shopPage">
       <section class="productList"></section>
     </main>
@@ -53,5 +88,189 @@
         </form>
       </div>
     </footer>
+=======
+      <div class="productRows">
+        <section
+          class="productRow"
+          id="clothes"
+          data-category="clothes"
+          aria-label="Одежда"
+        >
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/dress.png" alt="Белое платье Микропарк" />
+            </div>
+            <div class="productInfo">
+              <h2>Платье</h2>
+              <p>4500₽</p>
+              <div class="quantityControl" data-quantity="1">
+                <button
+                  type="button"
+                  data-action="minus"
+                  aria-label="Уменьшить количество"
+                >
+                  −
+                </button>
+                <span>1</span>
+                <button
+                  type="button"
+                  data-action="plus"
+                  aria-label="Увеличить количество"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/cap.png" alt="Белая кепка Микропарк" />
+            </div>
+            <div class="productInfo">
+              <h2>Кепка</h2>
+              <p>900₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/hat.png" alt="Белая шапка Микропарк" />
+            </div>
+            <div class="productInfo">
+              <h2>Шапка</h2>
+              <p>1000₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+        </section>
+
+        <section
+          class="productRow"
+          id="things"
+          data-category="things"
+          aria-label="Мелочи"
+        >
+          <article class="productCard" data-product>
+            <div class="productVisual productVisualContain">
+              <img src="images/seeds.png" alt="Семена микрозелени" />
+            </div>
+            <div class="productInfo">
+              <h2>Семена</h2>
+              <p>200₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/cup.png" alt="Кружка с зеленой крышкой" />
+            </div>
+            <div class="productInfo">
+              <h2>Кружка</h2>
+              <p>2000₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual productVisualContain">
+              <img
+                src="images/stickers.png"
+                alt="Набор стикеров с насекомыми"
+              />
+            </div>
+            <div class="productInfo">
+              <h2>Стикеры</h2>
+              <p>200₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+        </section>
+
+        <section
+          class="productRow"
+          id="gifts"
+          data-category="gifts"
+          aria-label="Подарки"
+        >
+          <article class="productCard" data-product>
+            <div class="productVisual productVisualContain">
+              <img
+                src="images/greens.png"
+                alt="Набор для выращивания микрозелени"
+              />
+            </div>
+            <div class="productInfo">
+              <h2>Микрозелень</h2>
+              <p>200₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/box.png" alt="Подарочный бокс Микропарк" />
+            </div>
+            <div class="productInfo">
+              <h2>Подарочный бокс</h2>
+              <p>900₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+
+          <article class="productCard" data-product>
+            <div class="productVisual">
+              <img src="images/toteBag.png" alt="Зеленый шоппер Микропарк" />
+            </div>
+            <div class="productInfo">
+              <h2>Шоппер</h2>
+              <p>1900₽</p>
+              <button class="addButton" type="button" data-add>
+                В корзину
+              </button>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+>>>>>>> Stashed changes
   </body>
+  <footer class="siteFooter">
+    <div class="footerColumn">
+      <a href="tel:+78006989080">+7 (800) 698-90-80</a>
+      <p>Круглосуточная связь</p>
+      <a href="mailto:micropark@mail.ru">MICROPARK@MAIL.RU</a>
+      <p>Поддержка</p>
+    </div>
+    <div class="footerColumn">
+      <h2>ПОСЕТИТЕЛЯМ</h2>
+      <a href="map.html">Интерактивная карта</a>
+      <a href="events.html">События</a>
+      <a href="shop.html">Магазин</a>
+    </div>
+    <div class="footerColumn footerSubscribe">
+      <h2>НОВОСТИ</h2>
+      <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
+      <form>
+        <input type="email" placeholder="example@example.com" />
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+  </footer>
 </html>

@@ -1,39 +1,137 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 html {
   height: 100%;
 }
+
 body {
   width: 100%;
+<<<<<<< Updated upstream
   min-height: 100%;
   background-color: #fff;
   font-family: 'ABCMonumentGrotesk', sans-serif;
   font-size: 20px;
   color: #202020;
+=======
+  height: 100%;
+  background-color: #f8f8f8;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+>>>>>>> Stashed changes
 }
 
+.section_1,
+.section_2,
+.section_3,
+.section_4,
+.section_5 {
+  padding: 3vw 5.8vw;
+}
+
+h1 {
+  font-size: 15.25vw;
+  padding: 0.5vw 5.8vw;
+  font-family: 'ABC MonumentGrotesk Medium', sans-serif;
+  letter-spacing: -0.065em;
+  margin-left: -0.9vw;
+}
+
+h2 {
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  font-family: 'ABC MonumentGrotesk Medium', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+h4 {
+  font-size: 1.6vw;
+}
+
+p {
+  font-size: 1.1vw;
+  line-height: 1.35;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  color: #5a5a5a;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 80px;
+  border: 1px solid #202020;
+  border-radius: 0;
+  background-color: transparent;
+  color: #202020;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 1.1vw;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color ease 0.25s,
+    border-color ease 0.25s,
+    color ease 0.25s,
+    opacity ease 0.25s;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #202020;
+  color: #ffffff;
+  outline: none;
+}
+
+/* хедер */
 .mainMenu {
   background-color: #fff;
   display: flex;
   width: 100%;
   min-height: 5vw;
   justify-content: space-between;
+<<<<<<< Updated upstream
   align-items: center;
   padding: 1.45vw 5.2vw;
+=======
+  padding: 1.6vw 6vw;
+>>>>>>> Stashed changes
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+<<<<<<< Updated upstream
   box-shadow: 0 0.45vw 1.4vw rgba(0, 0, 0, 0.12);
+=======
+>>>>>>> Stashed changes
 }
 
 .blockMenu {
   display: flex;
+<<<<<<< Updated upstream
   justify-content: space-between;
   align-items: center;
   width: 31%;
   gap: 2vw;
+=======
+  gap: 3vw;
+}
+
+.blockMenu2 {
+  display: flex;
+  gap: 3vw;
+>>>>>>> Stashed changes
 }
 
 .mainMenuLink {
@@ -57,6 +155,7 @@ body {
 }
 
 .logo {
+<<<<<<< Updated upstream
   display: block;
   height: 1.9vw;
   width: 1.9vw;
@@ -402,10 +501,19 @@ body {
     opacity: 0;
     transform: translate(-50%, -58%) scale(0.98);
   }
+=======
+  margin-top: -0.2vw;
+  height: 1.6vw;
+  width: 1.6vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+>>>>>>> Stashed changes
 }
 
-/* магазин */
+/* ГЛАВНАЯ СТРАНИЦА */
 
+<<<<<<< Updated upstream
 .shopPage {
   padding-top: 9.4vw;
   padding-bottom: 7.4vw;
@@ -422,9 +530,60 @@ body {
 .product {
   grid-column: span 3;
   background-color: #efefef;
+=======
+/* главный экран */
+main img {
+  width: 100%;
+}
+
+/*секция 1*/
+.section_1 {
+  position: relative;
+  min-height: clamp(380px, 31vw, 560px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.about {
+  position: relative;
+  z-index: 2;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
+  gap: 1vw;
+  width: min(32vw, 520px);
+  margin-left: 44%;
+  padding-top: 1.5vw;
+}
+
+.about .button {
+  width: fit-content;
+  margin-top: 1.2vw;
+}
+
+.ticketModal {
+  width: min(560px, calc(100% - 40px));
+  max-height: calc(100vh - 40px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #171717;
+  overflow: visible;
+}
+
+.ticketModal::backdrop {
+  background-color: rgb(20 20 20 / 0.52);
+  backdrop-filter: blur(3px);
+}
+
+.ticketModal[open] {
+  animation: ticket-modal-in 0.25s ease-out;
+}
+
+.ticketModalContent {
   position: relative;
+<<<<<<< Updated upstream
   min-height: 27vw;
 }
 
@@ -462,9 +621,321 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 20vw;
+=======
+  padding: 42px;
+  border: 1px solid #b8b8b4;
+  background-color: #f8f8f8;
+  box-shadow: 0 18px 60px rgb(0 0 0 / 0.16);
 }
 
-.product-img-wrapper img {
+.ticketModalClose {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #171717;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ticketModalClose span::before,
+.ticketModalClose span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 1px;
+  background-color: #171717;
+}
+
+.ticketModalClose span::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ticketModalClose span::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ticketModalClose:hover {
+  background-color: #171717;
+}
+
+.ticketModalClose:hover span::before,
+.ticketModalClose:hover span::after {
+  background-color: #f8f8f8;
+}
+
+.ticketModalClose:focus-visible,
+.ticketForm input:focus-visible,
+.ticketFormSubmit:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 3px;
+}
+
+.ticketModalHeading {
+  padding-right: 48px;
+}
+
+.ticketModalHeading > p {
+  margin-bottom: 14px;
+  color: #5a5a5a;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.ticketModalHeading h2 {
+  max-width: 390px;
+  font-size: 40px;
+  line-height: 0.98;
+}
+
+.ticketForm {
+  display: grid;
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.ticketForm label {
+  display: grid;
+  gap: 8px;
+}
+
+.ticketForm label > span {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.ticketForm input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #717171;
+  border-radius: 0;
+  background-color: transparent;
+  color: #171717;
+  font:
+    16px 'ABC MonumentGrotesk Regular',
+    sans-serif;
+}
+
+.ticketForm input::placeholder {
+  color: #929292;
+}
+
+.ticketFormRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 130px;
+  gap: 22px;
+}
+
+.ticketFormSubmit {
+  width: 100%;
+  margin-top: 6px;
+  background-color: #171717;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.ticketFormStatus {
+  min-height: 18px;
+  margin-top: -12px;
+  color: #171717;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body.modalOpen {
+  overflow: hidden;
+}
+
+@keyframes ticket-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.parkTrailImage {
+  --trail-rotation: 0deg;
+  position: absolute;
+  z-index: 1;
+  width: clamp(110px, 9vw, 165px);
+  aspect-ratio: 1.35 / 1;
+  border: 1px solid rgb(255 255 255 / 0.55);
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(var(--trail-rotation)) scale(0.78);
+  animation: park-trail 1.25s ease-out forwards;
+}
+
+@keyframes park-trail {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(var(--trail-rotation)) scale(0.78);
+  }
+
+  18%,
+  68% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) rotate(var(--trail-rotation)) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -58%) rotate(var(--trail-rotation)) scale(0.96);
+  }
+}
+/* секция 2 */
+.section_2 {
+  width: 100%;
+  height: clamp(480px, 36.5vw, 640px);
+  background-color: #ebebeb;
+  border-radius: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  overflow: hidden;
+}
+
+.section_2 h3 {
+  margin-bottom: 3vw;
+}
+
+.faqList {
+  border-top: 1px solid #626262;
+}
+
+.faqItem {
+  border-bottom: 1px solid #626262;
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  width: 100%;
+  min-height: 5vw;
+  padding: 1.25vw 0;
+  border: 0;
+  background-color: transparent;
+  color: #171717;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: 1.65vw;
+  line-height: 1.1;
+  text-align: left;
+  cursor: pointer;
+>>>>>>> Stashed changes
+}
+
+.faqQuestion:focus-visible {
+  outline: 1px solid #171717;
+  outline-offset: 5px;
+}
+
+.faqIcon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 2.7vw;
+  height: 2.7vw;
+  transition: transform ease 0.35s;
+}
+
+.faqIcon::before,
+.faqIcon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #171717;
+  transform: translate(-50%, -50%);
+}
+
+.faqIcon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faqItem.open .faqIcon {
+  transform: rotate(45deg);
+}
+
+.faqAnswer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows ease 0.4s;
+}
+
+.faqAnswer > div {
+  overflow: hidden;
+}
+
+.faqAnswer p {
+  max-width: 38vw;
+  padding: 0 0 1.5vw;
+  color: #5a5a5a;
+}
+
+.faqItem.open .faqAnswer {
+  grid-template-rows: 1fr;
+}
+
+/* секция 3 приключение */
+.section_3 {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  overflow: hidden;
+}
+
+.adventureHeading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -2.2vw;
+}
+
+.adventureHeading h2 {
+  font-size: clamp(48px, 4.5vw, 112px);
+  line-height: 0.9;
+}
+
+.adventureHeading h2:last-child {
+  width: fit-content;
+  margin-top: 0.8vw;
+  margin-left: auto;
+}
+
+.adventureLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(240px, 0.82fr) minmax(
+      0,
+      0.84fr
+    );
+  justify-content: center;
+  align-items: start;
+  gap: 3vw;
+}
+
+.adventureImage {
+  min-width: 0;
+  overflow: hidden;
+  background-color: #e8e8e5;
+}
+
+.adventureImage img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -472,6 +943,7 @@ body {
   max-height: 24vw;
 }
 
+<<<<<<< Updated upstream
 .productInfo {
   min-height: 4.8vw;
   padding: 1.35vw 1.5vw 1.45vw;
@@ -623,4 +1095,753 @@ body {
 
 .footerSubscribe button:hover {
   opacity: 0.82;
+=======
+.adventureImageMain {
+  width: 94%;
+  aspect-ratio: 0.78 / 1;
+}
+
+.adventureImageMain img {
+  object-position: 52% center;
+}
+
+.adventureImageSecondary {
+  width: 94%;
+  justify-self: end;
+  aspect-ratio: 1.38 / 1;
+  margin-top: 6vw;
+}
+
+.adventureImageSecondary img {
+  object-position: center 42%;
+}
+
+.adventureContent {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding-top: 6.2vw;
+}
+
+.adventureContent p {
+  max-width: 24vw;
+  letter-spacing: 0;
+}
+
+.adventureContent .button {
+  width: 100%;
+  margin-top: auto;
+  padding: 1.2vw 1.5vw;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* секция 4 события*/
+.section_4 {
+  background-color: #ebebeb;
+  border-radius: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
+}
+
+.section_4 > h3 {
+  margin-bottom: 2.8vw;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1vw;
+}
+
+.eventCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0.85vw;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.eventMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7vw;
+  min-height: 2vw;
+  margin-bottom: 1.2vw;
+}
+
+.eventTag {
+  padding: 0.45vw 0.65vw;
+  border: 1px solid #b8b8b5;
+  border-radius: 8px;
+  color: #737373;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: clamp(8px, 0.6vw, 11px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.eventMeta time {
+  color: #737373;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: clamp(8px, 0.6vw, 11px);
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.eventCard img {
+  display: block;
+  width: 64%;
+  aspect-ratio: 0.707 / 1;
+  margin: 0 auto 1vw;
+  object-fit: cover;
+  box-shadow: 0 0.4vw 1vw rgb(0 0 0 / 0.04);
+}
+
+.eventCard h4 {
+  min-height: 0;
+  margin-bottom: 0.75vw;
+  color: #292929;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: clamp(12px, 0.88vw, 17px);
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.eventCardButton {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 2.8vw;
+  margin-top: 0;
+  padding: 0 0.85vw;
+  font-size: clamp(9px, 0.68vw, 11px);
+}
+
+.eventCardButton::after {
+  content: '↗';
+}
+
+.eventCardButton:hover::after,
+.eventCardButton:focus-visible::after {
+  transform: translate(2px, -2px);
+}
+/* секция 5 */
+.section_5 {
+  padding-top: 5vw;
+  padding-bottom: 5.5vw;
+}
+
+.section_5 h3 {
+  padding-bottom: 2vw;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.85fr);
+  align-items: start;
+  gap: 3.8vw;
+}
+
+.mapEmbed {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  aspect-ratio: 1.55 / 1;
+  overflow: hidden;
+  background-color: #ececeb;
+}
+
+.mapEmbed > *,
+.mapEmbed ymaps,
+.mapEmbed iframe,
+.mapEmbed > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mapEmbed iframe {
+  display: block;
+  border: 0;
+}
+
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0.3vw;
+}
+
+.mapInfoLabel {
+  margin-bottom: 1vw;
+  color: #6b6b6b;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 0.75vw;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.mapInfo h4 {
+  margin-bottom: 1.1vw;
+  color: #202020;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: 2vw;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.mapInfo p {
+  max-width: 31vw;
+  font-size: 1vw;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.mapInfoRoute {
+  width: 100%;
+  margin-top: 1.6vw;
+  padding-top: 1vw;
+  border-top: 1px solid #b8b8b4;
+  color: #6b6b6b;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 0.72vw;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.mapActions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75vw;
+  width: 100%;
+  margin-top: 2vw;
+}
+
+.mapRouteButton {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 1.1vw;
+  font-size: 0.78vw;
+}
+
+.insects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* интерактивная карта */
+.mapPage {
+  min-height: 100%;
+  height: auto;
+  background-color: #f3f3f1;
+}
+
+.mapPageMain {
+  width: min(100%, 1600px);
+  margin: 0 auto;
+  padding: 5.5vw 5.8vw 6vw;
+}
+
+.mapIntro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 31vw);
+  align-items: end;
+  gap: 4vw;
+  margin-bottom: 3vw;
+}
+
+.mapIntro h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'ABC MonumentGrotesk Mono', monospace;
+  font-size: 48px;
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.mapIntroLabel,
+.mapSidebarLabel,
+.mapSidebarCount {
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 0.78vw;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.mapIntroLabel {
+  grid-column: 1 / -1;
+  margin-bottom: -2.5vw;
+  color: #727272;
+}
+
+.mapIntroText {
+  max-width: 31vw;
+  font-size: 1vw;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.mapExplorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 18vw);
+  min-height: 36vw;
+  border-top: 1px solid #b8b8b4;
+  border-bottom: 1px solid #b8b8b4;
+}
+
+.mapCanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.mapCanvas img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 42vw;
+  object-fit: contain;
+}
+
+.mapSidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6vw 0 1.6vw 2vw;
+  border-left: 1px solid #b8b8b4;
+}
+
+.mapSidebarTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  padding-bottom: 1.3vw;
+  border-bottom: 1px solid #b8b8b4;
+}
+
+.mapSidebarLabel {
+  color: #222;
+}
+
+.mapSidebarCount {
+  color: #858585;
+}
+
+.mapPage .insects-list {
+  flex: 1;
+  padding: 1vw 0 1.5vw;
+}
+
+.mapPage .insects-list a {
+  position: relative;
+  padding: 0.52vw 1.7vw 0.52vw 0;
+  color: #666;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: 1vw;
+  line-height: 1.15;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition:
+    color ease 0.25s,
+    padding-left ease 0.25s;
+}
+
+.mapPage .insects-list a::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition:
+    opacity ease 0.25s,
+    transform ease 0.25s;
+}
+
+.mapPage .insects-list a:hover,
+.mapPage .insects-list a:focus-visible {
+  padding-left: 0.35vw;
+  color: #111;
+  outline: none;
+}
+
+.mapPage .insects-list a:hover::after,
+.mapPage .insects-list a:focus-visible::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mapPage .mapButton {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1vw 1.1vw;
+  border-color: #222;
+  border-radius: 0;
+  font-size: 0.82vw;
+  line-height: 1;
+  letter-spacing: 0;
+  transition:
+    background-color ease 0.25s,
+    color ease 0.25s;
+}
+
+.mapPage .mapButton::after {
+  content: '↗';
+}
+
+.mapPage .mapButton:hover,
+.mapPage .mapButton:focus-visible {
+  background-color: #202020;
+  color: #fff;
+  outline: none;
+}
+
+.mapResidents {
+  padding-top: 6vw;
+}
+
+.mapResidentsHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 31vw);
+  align-items: end;
+  gap: 4vw;
+  margin-bottom: 2.5vw;
+}
+
+.mapResidentsHeading h2 {
+  max-width: 60vw;
+  font-family: 'ABC MonumentGrotesk Mono', monospace;
+  font-size: 48px;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.mapResidentsHeading p {
+  max-width: 28vw;
+  font-size: 1vw;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.residentCards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #f3f3f1;
+  border-bottom: 1px solid #f3f3f1;
+  background-color: #202020;
+}
+
+.residentCard {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 0.68 / 1;
+  overflow: hidden;
+  background-color: #202020;
+}
+
+.residentCard + .residentCard {
+  border-left: 2px solid #f3f3f1;
+}
+
+.residentCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0.02) 42%,
+    rgb(0 0 0 / 0.78) 100%
+  );
+  pointer-events: none;
+}
+
+.residentCard img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform ease 0.5s;
+}
+
+.residentCard:nth-child(1) img {
+  object-position: 48% center;
+}
+
+.residentCard:nth-child(2) img {
+  object-position: 48% center;
+}
+
+.residentCard:nth-child(3) img {
+  object-position: 57% center;
+}
+
+.residentCard:nth-child(4) img {
+  object-position: 45% center;
+}
+
+.residentCard:hover img {
+  transform: scale(1.035);
+}
+
+.residentCardContent {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  left: 1.5vw;
+  z-index: 1;
+}
+
+.residentCardContent h4 {
+  margin-bottom: 1.2vw;
+  color: #fff;
+  font-family: 'ABC MonumentGrotesk Regular', sans-serif;
+  font-size: 1.7vw;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.residentCardContent a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.9vw 1vw;
+  border: 1px solid rgb(255 255 255 / 0.72);
+  color: #fff;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 0.65vw;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color ease 0.25s,
+    color ease 0.25s;
+}
+
+.residentCardContent a::after {
+  content: '↗';
+}
+
+.residentCardContent a:hover,
+.residentCardContent a:focus-visible {
+  background-color: #fff;
+  color: #202020;
+  outline: none;
+}
+
+.mapGuide {
+  display: grid;
+  grid-template-columns: 50% clamp(420px, 29vw, 520px);
+  gap: 0;
+  align-items: start;
+  padding-top: 7vw;
+}
+
+.mapGuideInfo {
+  align-self: start;
+}
+
+.mapGuideInfo h2 {
+  margin-bottom: 2.4vw;
+  font-family: 'ABC MonumentGrotesk Mono', monospace;
+  font-size: 48px;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.mapGuideInfo > p:not(.mapIntroLabel) {
+  max-width: 24vw;
+  margin-bottom: 2.6vw;
+  font-size: 1.2vw;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.mapGuideDownload {
+  padding: 1.1vw 1.5vw;
+  border-radius: 0;
+  font-size: 0.85vw;
+  letter-spacing: 0;
+}
+
+.guideViewer {
+  width: 100%;
+  min-width: 0;
+}
+
+.guideToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.45vw;
+  padding-top: 0.45vw;
+  border-top: 1px solid #b8b8b4;
+}
+
+.guideToolbar p {
+  color: #606060;
+  font-family: 'ABC MonumentGrotesk Mono', sans-serif;
+  font-size: 0.75vw;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.guideControls {
+  display: flex;
+}
+
+.guideArrow {
+  display: grid;
+  width: 2.8vw;
+  height: 2.8vw;
+  place-items: center;
+  border: 1px solid #202020;
+  background-color: transparent;
+  color: #202020;
+  font: inherit;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition:
+    background-color ease 0.2s,
+    color ease 0.2s;
+}
+
+.guideArrow + .guideArrow {
+  border-left: 0;
+}
+
+.guideArrow:hover,
+.guideArrow:focus-visible {
+  background-color: #202020;
+  color: #fff;
+  outline: none;
+}
+
+.guideSlides {
+  position: relative;
+  aspect-ratio: 1248 / 1192;
+  perspective: 1400px;
+  background-color: #fff;
+  box-shadow: 0 1vw 2.5vw rgb(0 0 0 / 0.08);
+  touch-action: pan-y;
+}
+
+.guideSpread {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(1.5vw) rotateY(-2deg);
+  transform-origin: center;
+  transition:
+    opacity ease 0.35s,
+    transform ease 0.45s,
+    visibility ease 0.45s;
+  pointer-events: none;
+}
+
+.guideSpread.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0) rotateY(0);
+  pointer-events: auto;
+}
+
+.guideSpread img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* футер */
+.siteFooter {
+  background-color: #202020;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+  padding: 3.3vw 5.2vw 3.2vw;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 24%;
+  gap: 1vw;
+}
+
+.footerColumn h2,
+.footerColumn a {
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.footerColumn p {
+  color: #8c8c8c;
+  font-size: 0.88vw;
+  line-height: 1.25;
+  margin: 0 0 0.5vw;
+}
+
+.footerSubscribe {
+  width: 31%;
+}
+
+.footerSubscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100%;
+  margin-top: 0.4vw;
+}
+
+.footerSubscribe input {
+  width: 21vw;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  color: #202020;
+  font-family: inherit;
+  font-size: 0.82vw;
+  padding: 1vw 1.1vw;
+}
+
+.footerSubscribe button {
+  width: fit-content;
+  min-height: 44px;
+  border: 1px solid #60b500;
+  border-radius: 0;
+  background-color: #60b500;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.82vw;
+  line-height: 1;
+  padding: 0 1.4vw;
+  cursor: pointer;
+  transition:
+    background-color ease 0.25s,
+    border-color ease 0.25s,
+    color ease 0.25s;
+}
+
+.footerSubscribe button:hover,
+.footerSubscribe button:focus-visible {
+  border-color: #ffffff;
+  background-color: transparent;
+  outline: none;
+>>>>>>> Stashed changes
 }

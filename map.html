@@ -6,8 +6,9 @@
     <title>Карта</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascripts/scripts.js" defer></script>
+    <script src="javascripts/map.js" defer></script>
   </head>
-  <body>
+  <body class="mapPage">
     <div id="burger"></div>
 
     <nav class="mainMenu">
@@ -19,9 +20,174 @@
       <img class="logo" src="./images/icon.svg" alt="logo" />
       <div class="blockMenu">
         <a class="mainMenuLink" href="shop.html">МАГАЗИН</a>
-        <a class="mainMenuLink" href="jobs.html">ВАКАНСИИ</a>
-        <a class="mainMenuLink" href="insects.html">НАСЕКОМЫЕ</a>
+        <a class="mainMenuLink" href="insects.html">ОБИТАТЕЛИ</a>
       </div>
     </nav>
+
+    <main class="mapPageMain">
+      <header class="mapIntro">
+        <p class="mapIntroLabel">Навигация по парку</p>
+        <h1>Интерактивная карта</h1>
+        <p class="mapIntroText">
+          Исследуй, какие обитатели живут в Микропарке. Выбери интересующий вид
+          справа и узнай о нём больше.
+        </p>
+      </header>
+
+      <section class="mapExplorer">
+        <figure class="mapCanvas">
+          <img
+            src="images/map.svg"
+            alt="Схема Микропарка с водоёмом, растениями и зонами обитания насекомых"
+          />
+        </figure>
+
+        <aside class="mapSidebar">
+          <div class="mapSidebarTop">
+            <p class="mapSidebarLabel">Обитатели</p>
+            <p class="mapSidebarCount">8 видов</p>
+          </div>
+
+          <nav class="insects-list">
+            <a href="insects.html">Водомерки</a>
+            <a href="insects.html">Рыбы</a>
+            <a href="insects.html">Гусеницы</a>
+            <a href="insects.html">Пчёлы</a>
+            <a href="insects.html">Стрекозы</a>
+            <a href="insects.html">Муравьи</a>
+            <a href="insects.html">Светлячки</a>
+            <a href="insects.html">Мотыльки</a>
+          </nav>
+
+          <a href="insects.html" class="button mapButton">
+            Изучить обитателей
+          </a>
+        </aside>
+      </section>
+
+      <section class="mapResidents">
+        <div class="mapResidentsHeading">
+          <h2>Обитатели Микропарка</h2>
+          <p>
+            Познакомься с видами, которых можно встретить в разных зонах парка.
+          </p>
+        </div>
+
+        <div class="residentCards">
+          <article class="residentCard">
+            <img
+              src="images/insects/silkworm.png"
+              alt="Белый шелкопряд на зелёном листе"
+            />
+            <div class="residentCardContent">
+              <h4>Шелкопряды</h4>
+              <a href="insects.html">Узнать подробнее</a>
+            </div>
+          </article>
+
+          <article class="residentCard">
+            <img
+              src="images/insects/firefly.png"
+              alt="Светлячок на стебле травы"
+            />
+            <div class="residentCardContent">
+              <h4>Светлячки</h4>
+              <a href="insects.html">Узнать подробнее</a>
+            </div>
+          </article>
+
+          <article class="residentCard">
+            <img src="images/insects/ant1.png" alt="Муравей крупным планом" />
+            <div class="residentCardContent">
+              <h4>Муравьи</h4>
+              <a href="insects.html">Узнать подробнее</a>
+            </div>
+          </article>
+
+          <article class="residentCard">
+            <img src="images/insects/fish1.png" alt="Рыба под водой" />
+            <div class="residentCardContent">
+              <h4>Рыбы</h4>
+              <a href="insects.html">Узнать подробнее</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mapGuide">
+        <div class="mapGuideInfo">
+          <h2>Путеводитель</h2>
+          <p>
+            Внутри — маршрут по парку, его обитатели и лучшие места для
+            наблюдения.
+          </p>
+          <a
+            class="button mapGuideDownload"
+            href="images/map.svg"
+            download="map-micropark.svg"
+          >
+            Скачать карту
+          </a>
+        </div>
+
+        <div
+          class="guideViewer"
+          aria-label="Путеводитель по Микропарку"
+          tabindex="0"
+        >
+          <div class="guideSlides" aria-live="polite"></div>
+          <div class="guideToolbar">
+            <p>
+              Разворот
+              <span class="guideCurrent">01</span>/<span class="guideTotal"
+                >04</span
+              >
+            </p>
+            <div class="guideControls">
+              <button
+                class="guideArrow guidePrev"
+                type="button"
+                aria-label="Предыдущий разворот"
+                title="Предыдущий разворот"
+              >
+                ←
+              </button>
+              <button
+                class="guideArrow guideNext"
+                type="button"
+                aria-label="Следующий разворот"
+                title="Следующий разворот"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+
+  <!-- футер -->
+  <footer class="siteFooter">
+    <div class="footerColumn">
+      <a href="tel:+78006989080">+7 (800) 698-90-80</a>
+      <p>Круглосуточная связь</p>
+      <a href="mailto:micropark@mail.ru">MICROPARK@MAIL.RU</a>
+      <p>Поддержка</p>
+    </div>
+    <div class="footerColumn">
+      <h2>ПОСЕТИТЕЛЯМ</h2>
+      <a href="map.html">Интерактивная карта</a>
+      <a href="events.html">События</a>
+      <a href="shop.html">Магазин</a>
+    </div>
+    <div class="footerColumn footerSubscribe">
+      <h2>НОВОСТИ</h2>
+      <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
+      <form>
+        <input type="email" placeholder="example@example.com" />
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+  </footer>
 </html>

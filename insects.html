@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Насекомые Микропарка</title>
+    <title>Обитатели Микропарка</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/insects.css" />
     <script src="javascripts/scripts.js" defer></script>
+    <script src="javascripts/insects.js" defer></script>
   </head>
-  <body>
+  <body class="residentsPage">
     <div id="burger"></div>
 
     <nav class="mainMenu">
@@ -17,11 +19,237 @@
         <a class="mainMenuLink" href="events.html">СОБЫТИЯ</a>
       </div>
       <img class="logo" src="./images/icon.svg" alt="logo" />
-      <div class="blockMenu">
+      <div class="blockMenu2">
         <a class="mainMenuLink" href="shop.html">МАГАЗИН</a>
-        <a class="mainMenuLink" href="jobs.html">ВАКАНСИИ</a>
-        <a class="mainMenuLink active" href="insects.html">НАСЕКОМЫЕ</a>
+        <a class="mainMenuLink active" href="insects.html">ОБИТАТЕЛИ</a>
       </div>
     </nav>
+
+    <main class="residentsMain">
+      <section class="residentsExperience" aria-labelledby="residentsTitle">
+        <div class="residentsIntro">
+          <h1 id="residentsTitle">
+            В Микропарке живёт множество удивительных обитателей.
+          </h1>
+        </div>
+
+        <div class="residentsListWrap">
+          <div
+            class="residentsCatalog"
+            aria-label="Список обитателей Микропарка"
+          >
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Шелкопряды"
+                data-image="images/insects/silkworm.png"
+                data-description="Мягкие светлые мотыльки живут рядом с травами и листьями. Их легко заметить по пушистому телу и спокойному полёту."
+                data-detail="Шелкопряды выбирают тихие заросли, где есть укрытие от ветра и много мягких листьев. В каталоге Микропарка это самый спокойный вид: они почти не меняют траекторию и будто проверяют воздух короткими плавными кругами."
+              >
+                Шелкопряды
+              </button>
+              <p class="residentDescription">
+                Мягкие светлые мотыльки живут рядом с травами и листьями. Их
+                легко заметить по пушистому телу и спокойному полёту.
+              </p>
+            </article>
+
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Рыбы"
+                data-image="images/insects/fish1.png"
+                data-description="Небольшие рыбы держатся у подводных растений и камней. Они помогают поддерживать спокойный ритм водоёмов парка."
+                data-detail="Рыбы живут в самых прохладных точках водоёмов и собираются там, где от растений падает тень. По их движению удобно наблюдать за течением: стая быстро показывает, где вода спокойная, а где под поверхностью начинается движение."
+              >
+                Рыбы
+              </button>
+              <p class="residentDescription">
+                Небольшие рыбы держатся у подводных растений и камней. Они
+                помогают поддерживать спокойный ритм водоёмов парка.
+              </p>
+            </article>
+
+            <article class="residentEntry active" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="true"
+                data-title="Водомерки"
+                data-image="images/insects/waterStrider.png"
+                data-description="Наиболее распространены виды рода Gerris. Живут на поверхности воды и скользят по ней, почти не оставляя следа."
+                data-detail="Водомерки удерживаются на поверхности воды благодаря длинным лапкам и поверхностному натяжению. В Микропарке они появляются у тихих кромок пруда и расходятся резкими короткими рывками, когда рядом падает лист или меняется свет."
+              >
+                Водомерки
+              </button>
+              <p class="residentDescription">
+                Наиболее распространены виды рода Gerris. Живут на поверхности
+                воды и скользят по ней, почти не оставляя следа.
+              </p>
+            </article>
+
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Пчёлы"
+                data-image="images/insects/bee1.png"
+                data-description="Пчёлы перелетают между цветами и переносят пыльцу. В Микропарке они особенно заметны на открытых солнечных участках."
+                data-detail="Пчёлы связывают разные зоны парка: от клумб до травяных островков. Их маршруты меняются в течение дня, поэтому утром они держатся ближе к раскрытым цветам, а к вечеру чаще возвращаются к тёплым сухим местам."
+              >
+                Пчёлы
+              </button>
+              <p class="residentDescription">
+                Пчёлы перелетают между цветами и переносят пыльцу. В Микропарке
+                они особенно заметны на открытых солнечных участках.
+              </p>
+            </article>
+
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Муравьи"
+                data-image="images/insects/ant1.png"
+                data-description="Муравьи строят маршруты между листьями, ветками и миниатюрными холмами. Они двигаются группами и быстро находят новые тропы."
+                data-detail="Муравьи — главные строители маршрутов в Микропарке. Они быстро перестраивают дорожки после дождя, обходят препятствия цепочками и превращают случайные ветки в настоящие мосты между участками."
+              >
+                Муравьи
+              </button>
+              <p class="residentDescription">
+                Муравьи строят маршруты между листьями, ветками и миниатюрными
+                холмами. Они двигаются группами и быстро находят новые тропы.
+              </p>
+            </article>
+
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Стрекозы"
+                data-image="images/insects/dragonfly1.png"
+                data-description="Стрекозы держатся рядом с водой и площадками наблюдения. Их прозрачные крылья хорошо видно на свету."
+                data-detail="Стрекозы чаще всего появляются над водой в ясную погоду. Они зависают на месте, резко меняют направление и охотятся в воздухе, поэтому рядом с ними пространство кажется более быстрым и точным."
+              >
+                Стрекозы
+              </button>
+              <p class="residentDescription">
+                Стрекозы держатся рядом с водой и площадками наблюдения. Их
+                прозрачные крылья хорошо видно на свету.
+              </p>
+            </article>
+
+            <article class="residentEntry" data-resident-entry>
+              <button
+                class="residentOption"
+                type="button"
+                aria-pressed="false"
+                data-title="Светлячки"
+                data-image="images/insects/firefly2.png"
+                data-description="Светлячки появляются в сумерках и подсвечивают траву мягкими зелёными вспышками. Их лучше искать у влажных зарослей и тихих тропинок."
+                data-detail="Светлячки используют световые сигналы, чтобы находить друг друга в темноте. В Микропарке они становятся заметны после заката: отдельные огни вспыхивают низко над травой, будто отмечая скрытый вечерний маршрут."
+              >
+                Светлячки
+              </button>
+              <p class="residentDescription">
+                Светлячки появляются в сумерках и подсвечивают траву мягкими
+                зелёными вспышками. Их лучше искать у влажных зарослей и тихих
+                тропинок.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <button class="button residentMoreButton" type="button">
+          Узнать больше
+        </button>
+
+        <figure class="residentPhotoFrame" aria-live="polite">
+          <img
+            class="residentPhoto"
+            src="images/insects/waterStrider.png"
+            alt="Водомерка на поверхности воды"
+          />
+        </figure>
+      </section>
+
+      <div
+        class="residentModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="residentModalTitle"
+        aria-hidden="true"
+        hidden
+      >
+        <button
+          class="residentModalBackdrop"
+          type="button"
+          aria-label="Закрыть окно"
+          data-resident-close
+        ></button>
+        <section class="residentModalPanel">
+          <button
+            class="residentModalClose"
+            type="button"
+            aria-label="Закрыть окно"
+            data-resident-close
+          >
+            ×
+          </button>
+          <img
+            class="residentModalImage"
+            src="images/insects/waterStrider.png"
+            alt=""
+          />
+          <div class="residentModalContent">
+            <h2 id="residentModalTitle">Водомерки</h2>
+            <p class="residentModalDescription">
+              Наиболее распространены виды рода Gerris. Живут на поверхности
+              воды и скользят по ней, почти не оставляя следа.
+            </p>
+            <p class="residentModalDetail">
+              Водомерки удерживаются на поверхности воды благодаря длинным
+              лапкам и поверхностному натяжению.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="siteFooter">
+      <div class="footerColumn">
+        <a href="tel:+78006989080">+7 (800) 698-90-80</a>
+        <p>Круглосуточная связь</p>
+        <a href="mailto:micropark@mail.ru">MICROPARK@MAIL.RU</a>
+        <p>Поддержка</p>
+      </div>
+      <div class="footerColumn">
+        <h2>ПОСЕТИТЕЛЯМ</h2>
+        <a href="map.html">Интерактивная карта</a>
+        <a href="events.html">События</a>
+        <a href="shop.html">Магазин</a>
+      </div>
+      <div class="footerColumn footerSubscribe">
+        <h2>НОВОСТИ</h2>
+        <p>
+          Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.
+        </p>
+        <form>
+          <input
+            type="email"
+            aria-label="Электронная почта"
+            placeholder="example@example.com"
+          />
+          <button type="submit">Подписаться</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

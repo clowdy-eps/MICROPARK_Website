@@ -14,7 +14,6 @@
     left: 0;
     width: 100%;
     height: 2px;
-    border-radius: 2px;
     background-color: #222;
     transition: transform ease 0.8s;
   }
@@ -94,6 +93,7 @@
     opacity: 0;
   }
 
+<<<<<<< Updated upstream
   .homePage {
     padding-top: 0;
   }
@@ -238,10 +238,658 @@
 
   .eventMeta span:first-child {
     padding: 7px 10px;
+=======
+  .section_1 {
+    min-height: 0;
+    padding: 54px 18px 64px;
+  }
+
+  .about {
+    width: 100%;
+    max-width: 420px;
+    margin-left: 0;
+    padding-top: 0;
+    gap: 14px;
+  }
+
+  .about h3 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .about .button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .ticketModal {
+    width: calc(100% - 24px);
+    max-height: calc(100vh - 24px);
+  }
+
+  .ticketModalContent {
+    max-height: calc(100vh - 24px);
+    padding: 28px 20px 24px;
+    overflow-y: auto;
+  }
+
+  .ticketModalClose {
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .ticketModalHeading {
+    padding-right: 38px;
+  }
+
+  .ticketModalHeading > p {
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+
+  .ticketModalHeading h2 {
+    font-size: 32px;
+  }
+
+  .ticketForm {
+    gap: 18px;
+    margin-top: 28px;
+  }
+
+  .ticketFormRow {
+    grid-template-columns: minmax(0, 1fr) 104px;
+    gap: 16px;
+  }
+
+  .ticketForm label > span,
+  .ticketFormStatus {
+    font-size: 10px;
+  }
+
+  .ticketForm input {
+    min-height: 42px;
+    font-size: 15px;
+  }
+
+  .ticketFormSubmit {
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .parkTrailImage {
+    display: none;
+  }
+
+  .section_2 {
+    height: 530px;
+    padding: 42px 18px 48px;
+    border-radius: 18px;
+  }
+
+  .section_2 h3 {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+
+  .faqQuestion {
+    min-height: 66px;
+    padding: 16px 0;
+    font-size: 21px;
+  }
+
+  .faqIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faqAnswer p {
+    max-width: 330px;
+    padding: 0 42px 18px 0;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .section_3 {
+    padding: 64px 18px;
+  }
+
+  .adventureHeading {
+    margin-bottom: 28px;
+  }
+
+  .adventureHeading h2 {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 0.94;
+  }
+
+  .adventureHeading h2:last-child {
+    margin: 4px 0 0;
+  }
+
+  .adventureLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .adventureImageMain,
+  .adventureImageSecondary {
+    width: 96%;
+    margin: 0;
+  }
+
+  .adventureImageMain {
+    align-self: flex-start;
+  }
+
+  .adventureImageSecondary {
+    align-self: flex-end;
+  }
+
+  .adventureImageMain {
+    aspect-ratio: 0.86 / 1;
+  }
+
+  .adventureImageSecondary {
+    aspect-ratio: 1.25 / 1;
+  }
+
+  .adventureContent {
+    display: contents;
+  }
+
+  .adventureContent p {
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .adventureContent .button {
+    order: 4;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .section_4 {
+    padding: 42px 18px 48px;
+    border-radius: 18px;
+  }
+
+  .section_4 > h3 {
+    margin-bottom: 26px;
+    font-size: 24px;
+  }
+
+  .events {
+    display: flex;
+    gap: 12px;
+    margin-right: -18px;
+    padding-right: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .events::-webkit-scrollbar {
+    display: none;
+  }
+
+  .eventCard {
+    flex: 0 0 82vw;
+    padding: 14px;
+    scroll-snap-align: start;
+  }
+
+  .eventMeta {
+    min-height: 38px;
+    margin-bottom: 18px;
+  }
+
+  .eventTag {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+
+  .eventMeta time {
+    font-size: 10px;
+  }
+
+  .eventCard img {
+    width: 76%;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgb(0 0 0 / 0.07);
+  }
+
+  .eventCard h4 {
+    min-height: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .eventCardButton {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .section_5 {
+    padding: 42px 18px 54px;
+  }
+
+  .section_5 h3 {
+    padding-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .map {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    overflow: hidden;
+  }
+
+  .mapEmbed {
+    min-height: 320px;
+    aspect-ratio: 0.96 / 1;
+  }
+
+  .mapInfo {
+    padding-top: 0;
+  }
+
+  .mapInfoLabel {
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+
+  .mapInfo h4 {
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+
+  .mapInfo p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .mapInfoRoute {
+    margin-top: 20px;
+    padding-top: 14px;
+    font-size: 10px;
+  }
+
+  .mapActions {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .mapRouteButton {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .mapPage {
+    padding-top: 0;
+  }
+
+  .mapPageMain {
+    padding: 88px 18px 36px;
+  }
+
+  .mapIntro {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .mapIntroLabel {
+    margin: 0 0 16px;
+    font-size: 11px;
+  }
+
+  .mapIntro h1 {
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 0.94;
+  }
+
+  .mapIntroText {
+    max-width: 420px;
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .mapExplorer {
+    display: block;
+    min-height: 0;
+  }
+
+  .mapCanvas {
+    aspect-ratio: 1.31 / 1;
+  }
+
+  .mapCanvas img {
+    max-height: none;
+  }
+
+  .mapSidebar {
+    padding: 22px 0 0;
+    border-top: 1px solid #b8b8b4;
+    border-left: 0;
+  }
+
+  .mapSidebarTop {
+    padding-bottom: 16px;
+  }
+
+  .mapSidebarLabel,
+  .mapSidebarCount {
+    font-size: 11px;
+  }
+
+  .mapPage .insects-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px 0 20px;
+  }
+
+  .mapPage .insects-list a {
+    padding: 10px 22px 10px 0;
+    border-bottom: 1px solid #d3d3cf;
+    font-size: 15px;
+  }
+
+  .mapPage .insects-list a:nth-child(odd) {
+    margin-right: 12px;
+  }
+
+  .mapPage .insects-list a:hover,
+  .mapPage .insects-list a:focus-visible {
+    padding-left: 4px;
+  }
+
+  .mapPage .mapButton {
+    margin-bottom: 22px;
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .mapResidents {
+    padding-top: 64px;
+  }
+
+  .mapResidentsHeading {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .mapResidentsHeading h2 {
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 0.94;
+  }
+
+  .mapResidentsHeading p {
+    max-width: 350px;
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .residentCards {
+    grid-template-columns: 1fr;
+  }
+
+  .residentCard {
+    aspect-ratio: 1 / 1.2;
+  }
+
+  .residentCard + .residentCard {
+    border-top: 2px solid #f3f3f1;
+    border-left: 0;
+  }
+
+  .residentCardContent {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .residentCardContent h4 {
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
+
+  .residentCardContent a {
+    padding: 15px;
+    font-size: 11px;
+  }
+
+  .mapGuide {
+    display: block;
+    padding-top: 72px;
+  }
+
+  .mapGuideInfo .mapIntroLabel {
+    margin-bottom: 14px;
+  }
+
+  .mapGuideInfo h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .mapGuideInfo > p:not(.mapIntroLabel) {
+    max-width: 350px;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+
+  .mapGuideDownload {
+    padding: 15px 18px;
+    font-size: 12px;
+  }
+
+  .guideViewer {
+    margin-top: 42px;
+  }
+
+  .guideToolbar {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #b8b8b4;
+  }
+
+  .guideToolbar p {
+    font-size: 10px;
+  }
+
+  .guideArrow {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .guideSlides {
+    aspect-ratio: 1248 / 1192;
+  }
+
+  .guideSpread {
+    display: block;
+  }
+
+  .guidePage {
+    display: none;
+  }
+
+  .guidePage:first-child {
+    display: flex;
+  }
+
+  .guideContents,
+  .guideRoutePage,
+  .guideTipsPage {
+    display: block;
+    padding: 26px;
+  }
+
+  .guideCover {
+    padding: 26px;
+  }
+
+  .guideCover > p,
+  .guideChapter {
+    font-size: 11px;
+  }
+
+  .guideCover h3 {
+    font-size: 42px;
+  }
+
+  .guideCover > span,
+  .guidePageNumber {
+    right: 18px;
+    bottom: 16px;
+    font-size: 10px;
+  }
+
+  .guideContents h3 {
+    margin-bottom: 46px;
+    font-size: 32px;
+  }
+
+  .guideContents ol {
+    gap: 18px;
+  }
+
+  .guideContents li {
+    padding-bottom: 8px;
+    font-size: 13px;
+  }
+
+  .guideRoutePage h3,
+  .guideTipsPage h3 {
+    margin-bottom: 24px;
+    font-size: 34px;
+  }
+
+  .guideRoutePage > p:not(.guideChapter),
+  .guideTipsPage li {
+    font-size: 14px;
+  }
+
+  .guideTipsPage ul {
+    gap: 18px;
+    margin-top: 46px;
+  }
+
+  .guideTipsPage li {
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .section_1 {
+    min-height: 360px;
+  }
+
+  .about {
+    width: 42vw;
+    margin-left: 42%;
+  }
+
+  .about p {
+    font-size: 13px;
+  }
+
+  .about .button {
+    padding: 12px 28px;
+    font-size: 10px;
+  }
+
+  .section_2 {
+    height: 500px;
+  }
+
+  .faqQuestion {
+    min-height: 62px;
+    font-size: 20px;
+  }
+
+  .faqIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faqAnswer p {
+    max-width: 480px;
+    font-size: 13px;
+  }
+
+  .adventureHeading {
+    margin-bottom: -1vw;
+  }
+
+  .adventureHeading h2 {
+    font-size: 6vw;
+  }
+
+  .adventureLayout {
+    grid-template-columns: 0.88fr 0.85fr 0.88fr;
+  }
+
+  .adventureContent p {
+    max-width: none;
+    font-size: 13px;
+  }
+
+  .adventureContent .button {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .events {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .eventCard {
+    padding: 16px;
+  }
+
+  .eventMeta {
+    min-height: 34px;
+    margin-bottom: 16px;
+  }
+
+  .eventTag,
+  .eventMeta time,
+  .eventCardButton {
+    font-size: 10px;
+  }
+
+  .eventTag {
+    padding: 7px 9px;
+>>>>>>> Stashed changes
   }
 
   .eventCard img {
     width: 68%;
+<<<<<<< Updated upstream
     margin: 16px auto 18px;
   }
 
@@ -478,5 +1126,174 @@
 
   .mapPlaceholder {
     height: 28vw;
+=======
+    margin-bottom: 18px;
+  }
+
+  .eventCard h4 {
+    min-height: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .eventCardButton {
+    min-height: 42px;
+    padding: 0 14px;
+  }
+
+  .section_5 {
+    padding: 48px 5.8vw 58px;
+  }
+
+  .section_5 h3 {
+    padding-bottom: 24px;
+  }
+
+  .map {
+    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+    gap: 28px;
+  }
+
+  .mapEmbed {
+    min-height: 340px;
+  }
+
+  .mapInfoLabel {
+    font-size: 10px;
+  }
+
+  .mapInfo h4 {
+    font-size: 24px;
+  }
+
+  .mapInfo p {
+    max-width: none;
+    font-size: 13px;
+  }
+
+  .mapInfoRoute {
+    font-size: 10px;
+  }
+
+  .mapActions {
+    gap: 10px;
+  }
+
+  .mapRouteButton {
+    min-height: 42px;
+    padding: 0 12px;
+    font-size: 10px;
+  }
+
+  .mapPageMain {
+    padding-top: 8vw;
+  }
+
+  .mapIntro {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 38vw);
+  }
+
+  .mapIntroLabel,
+  .mapSidebarLabel,
+  .mapSidebarCount {
+    font-size: 10px;
+  }
+
+  .mapIntroText,
+  .mapPage .insects-list a {
+    font-size: 13px;
+  }
+
+  .mapExplorer {
+    grid-template-columns: minmax(0, 1fr) 220px;
+  }
+
+  .mapPage .mapButton {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .mapResidentsHeading p {
+    font-size: 13px;
+  }
+
+  .residentCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .residentCard:nth-child(3) {
+    border-left: 0;
+  }
+
+  .residentCard:nth-child(n + 3) {
+    border-top: 2px solid #f3f3f1;
+  }
+
+  .residentCardContent {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .residentCardContent h4 {
+    margin-bottom: 14px;
+    font-size: 24px;
+  }
+
+  .residentCardContent a {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .mapGuide {
+    display: block;
+  }
+
+  .mapGuideInfo h2 {
+    margin-bottom: 18px;
+    font-size: 48px;
+  }
+
+  .mapGuideInfo > p:not(.mapIntroLabel) {
+    max-width: 420px;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+
+  .mapGuideDownload {
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .guideToolbar p,
+  .guideChapter {
+    font-size: 9px;
+  }
+
+  .guideViewer {
+    margin-top: 38px;
+  }
+
+  .guideArrow {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+
+  .guideCover h3 {
+    font-size: 28px;
+  }
+
+  .guideContents h3,
+  .guideRoutePage h3,
+  .guideTipsPage h3 {
+    font-size: 23px;
+  }
+
+  .guideContents li,
+  .guideRoutePage > p:not(.guideChapter),
+  .guideTipsPage li {
+    font-size: 10px;
+>>>>>>> Stashed changes
   }
 }

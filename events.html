@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>События</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/events.css" />
     <script src="javascripts/scripts.js" defer></script>
+    <script src="javascripts/events.js" defer></script>
   </head>
-  <body>
+  <body class="eventsPage">
     <div id="burger"></div>
 
     <nav class="mainMenu">
@@ -17,11 +19,456 @@
         <a class="mainMenuLink active" href="events.html">СОБЫТИЯ</a>
       </div>
       <img class="logo" src="./images/icon.svg" alt="logo" />
-      <div class="blockMenu">
+      <div class="blockMenu2">
         <a class="mainMenuLink" href="shop.html">МАГАЗИН</a>
-        <a class="mainMenuLink" href="jobs.html">ВАКАНСИИ</a>
-        <a class="mainMenuLink" href="insects.html">НАСЕКОМЫЕ</a>
+        <a class="mainMenuLink" href="insects.html">ОБИТАТЕЛИ</a>
       </div>
     </nav>
+
+    <main class="eventsCatalog">
+      <h1>Лекции от учёных</h1>
+
+      <div class="eventsCatalogGrid">
+        <article class="eventsCatalogCard eventsCatalogCardOne">
+          <div class="eventsCatalogMeta">
+            <span>Лекция</span>
+            <time datetime="2026-06-27">27 июн. 2026</time>
+          </div>
+          <img
+            src="images/posters/microParticles1.png"
+            alt="Афиша лекции о молекулах и атомах"
+          />
+          <h2>Молекулы и атомы: новый взгляд</h2>
+          <a class="button eventCardButton" href="events.html">Подробнее</a>
+        </article>
+
+        <article class="eventsCatalogCard eventsCatalogCardTwo">
+          <div class="eventsCatalogMeta">
+            <span>Экскурсия</span>
+            <time datetime="2026-07-04">04 июл. 2026</time>
+          </div>
+          <img
+            src="images/posters/halftone1.png"
+            alt="Афиша экскурсии о стрекозах"
+          />
+          <h2>Знакомство со стрекозами</h2>
+          <a class="button eventCardButton" href="events.html">Подробнее</a>
+        </article>
+
+        <article class="eventsCatalogCard eventsCatalogCardThree">
+          <div class="eventsCatalogMeta">
+            <span>Мастер-класс</span>
+            <time datetime="2026-07-12">12 июл. 2026</time>
+          </div>
+          <img
+            src="images/posters/microscope3.png"
+            alt="Афиша мастер-класса по работе с микроскопом"
+          />
+          <h2>Микромир под объективом</h2>
+          <a class="button eventCardButton" href="events.html">Подробнее</a>
+        </article>
+
+        <div class="eventsCatalogIntro">
+          <p>
+            В Микропарке каждую неделю проходят лекции, экскурсии и
+            мастер-классы. Актуальные даты и новые события появляются на этой
+            странице.
+          </p>
+        </div>
+
+        <article class="eventsCatalogCard eventsCatalogCardFour">
+          <div class="eventsCatalogMeta">
+            <span>Экскурсия</span>
+            <time datetime="2026-07-19">19 июл. 2026</time>
+          </div>
+          <img
+            src="images/posters/walk2.png"
+            alt="Афиша прогулки по Микропарку"
+          />
+          <h2>Прогулка по тропам Микропарка</h2>
+          <a class="button eventCardButton" href="events.html">Подробнее</a>
+        </article>
+
+        <article class="eventsCatalogCard eventsCatalogCardFive">
+          <div class="eventsCatalogMeta">
+            <span>Мастер-класс</span>
+            <time datetime="2026-07-26">26 июл. 2026</time>
+          </div>
+          <img
+            src="images/posters/plasticine2.png"
+            alt="Афиша мастер-класса по лепке насекомого"
+          />
+          <h2>Слепи жителя Микропарка</h2>
+          <a class="button eventCardButton" href="events.html">Подробнее</a>
+        </article>
+      </div>
+
+      <section
+        class="eventsCatalogSection"
+        aria-labelledby="eventsWorkshopsTitle"
+      >
+        <h2 id="eventsWorkshopsTitle">Мастер-классы</h2>
+
+        <div class="eventsWorkshopGrid">
+          <article class="eventsCatalogCard eventsWorkshopCardOne">
+            <div class="eventsCatalogMeta">
+              <span>Мастер-класс</span>
+              <time datetime="2026-08-02">02 авг. 2026</time>
+            </div>
+            <img
+              src="images/posters/plasticine3.png"
+              alt="Афиша мастер-класса с пластилиновым кузнечиком"
+            />
+            <h2>Лепка больших кузнечиков</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <div class="eventsWorkshopText">
+            <p>
+              На мастер-классах можно лепить своими руками, использовать
+              нестандартные материалы и собирать собственные микроузоры.
+            </p>
+          </div>
+
+          <article class="eventsCatalogCard eventsWorkshopCardTwo">
+            <div class="eventsCatalogMeta">
+              <span>Экскурсия</span>
+              <time datetime="2026-08-09">09 авг. 2026</time>
+            </div>
+            <img
+              src="images/posters/halftone3.png"
+              alt="Афиша экскурсии о светлячках"
+            />
+            <h2>Знакомство со светлячками</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <article class="eventsCatalogCard eventsWorkshopCardThree">
+            <div class="eventsCatalogMeta">
+              <span>Мастер-класс</span>
+              <time datetime="2026-08-16">16 авг. 2026</time>
+            </div>
+            <img
+              src="images/posters/plasticine1.png"
+              alt="Афиша мастер-класса о пластилиновых насекомых"
+            />
+            <h2>Пластилиновые насекомые</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <article class="eventsCatalogCard eventsWorkshopCardFour">
+            <div class="eventsCatalogMeta">
+              <span>Лекция</span>
+              <time datetime="2026-08-23">23 авг. 2026</time>
+            </div>
+            <img
+              src="images/posters/walk1.png"
+              alt="Афиша прогулки по Микропарку"
+            />
+            <h2>Новые микро-тропинки</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <a
+            class="eventsFeature"
+            href="https://clowdy-eps.github.io/micropark/"
+          >
+            <div class="eventsCatalogMeta">
+              <span>Спецпроект</span>
+              <time datetime="2026-08-30">30 авг. 2026</time>
+            </div>
+            <img src="images/map.svg" alt="Схема Микропарка" />
+            <h2>Изучи Микропарк</h2>
+          </a>
+        </div>
+      </section>
+
+      <section class="eventsPhotoSection" aria-labelledby="eventsPhotoTitle">
+        <h2 id="eventsPhotoTitle">Фото с наших событий</h2>
+
+        <div class="eventsPhotoMarquee" aria-label="Фотографии событий">
+          <div class="eventsPhotoTrack">
+            <img src="images/insects/silkworm.png" alt="Шелкопряд на листе" />
+            <img
+              class="wide"
+              src="images/insects/waterStrider.png"
+              alt="Водомерка на воде"
+            />
+            <img src="images/insects/bee1.png" alt="Пчела в полёте" />
+            <img
+              class="wide"
+              src="images/renders/LakeAndAnthill.png"
+              alt="Зона муравейника в Микропарке"
+            />
+            <img src="images/insects/silkworm.png" alt="" aria-hidden="true" />
+            <img
+              class="wide"
+              src="images/insects/waterStrider.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <img src="images/insects/bee1.png" alt="" aria-hidden="true" />
+            <img
+              class="wide"
+              src="images/renders/LakeAndAnthill.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+
+        <div
+          class="eventsPhotoMarquee eventsPhotoMarqueeReverse"
+          aria-hidden="true"
+        >
+          <div class="eventsPhotoTrack">
+            <img
+              class="wide"
+              src="images/renders/lakeRelax.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <img src="images/renders/Ants.png" alt="" aria-hidden="true" />
+            <img
+              class="wide"
+              src="images/renders/FishObservationPoint.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <img src="images/insects/firefly.png" alt="" aria-hidden="true" />
+            <img
+              class="wide"
+              src="images/renders/lakeRelax.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <img src="images/renders/Ants.png" alt="" aria-hidden="true" />
+            <img
+              class="wide"
+              src="images/renders/FishObservationPoint.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <img src="images/insects/firefly.png" alt="" aria-hidden="true" />
+          </div>
+        </div>
+      </section>
+
+      <section class="eventsCatalogSection" aria-labelledby="eventsToursTitle">
+        <h2 id="eventsToursTitle">Экскурсии</h2>
+
+        <div class="eventsProgramGrid eventsToursGrid">
+          <article class="eventsCatalogCard eventsToursCardOne">
+            <div class="eventsCatalogMeta">
+              <span>Экскурсия</span>
+              <time datetime="2026-09-06">06 сен. 2026</time>
+            </div>
+            <img
+              src="images/posters/microscope2.png"
+              alt="Афиша воркшопа под микроскопом"
+            />
+            <h2>Работа под микроскопом</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <div class="eventsProgramText eventsToursText">
+            <p>
+              Экскурсии проходят ежедневно для всех посетителей парка. Кроме
+              того, на экскурсию можно позвать лектора.
+            </p>
+          </div>
+
+          <article class="eventsCatalogCard eventsToursCardTwo">
+            <div class="eventsCatalogMeta">
+              <span>Лекция</span>
+              <time datetime="2026-09-13">13 сен. 2026</time>
+            </div>
+            <img
+              src="images/posters/walk3.png"
+              alt="Афиша с приглашением пойти гулять"
+            />
+            <h2>Новые маршруты Микропарка</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <article class="eventsCatalogCard eventsToursCardThree">
+            <div class="eventsCatalogMeta">
+              <span>Лекция</span>
+              <time datetime="2026-09-20">20 сен. 2026</time>
+            </div>
+            <img
+              src="images/posters/microParticles2.png"
+              alt="Афиша третьей лекции"
+            />
+            <h2>Редкие виды нано-растений</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <article class="eventsCatalogCard eventsToursCardFour">
+            <div class="eventsCatalogMeta">
+              <span>Мастер-класс</span>
+              <time datetime="2026-09-27">27 сен. 2026</time>
+            </div>
+            <img
+              src="images/posters/plasticine3.png"
+              alt="Афиша мастер-класса с пластилиновым кузнечиком"
+            />
+            <h2>У нас живут большие пчёлы</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <a
+            class="eventsFeature eventsLabFeature"
+            href="https://clowdy-eps.github.io/micropark-research/"
+          >
+            <div class="eventsCatalogMeta">
+              <span>Спецпроект</span>
+              <time datetime="2026-10-04">04 окт. 2026</time>
+            </div>
+            <img
+              src="images/pages/page08.png"
+              alt="Страница исследовательского путеводителя"
+            />
+            <h2>Попробуй себя в роли исследователя</h2>
+          </a>
+        </div>
+      </section>
+
+      <section class="eventsCatalogSection" aria-labelledby="eventsWalksTitle">
+        <h2 id="eventsWalksTitle">Прогулки</h2>
+
+        <div class="eventsProgramGrid eventsWalksGrid">
+          <article class="eventsCatalogCard eventsWalksCardOne">
+            <div class="eventsCatalogMeta">
+              <span>Экскурсия</span>
+              <time datetime="2026-10-11">11 окт. 2026</time>
+            </div>
+            <img
+              src="images/posters/microscope1.png"
+              alt="Афиша мастер-класса по созданию микрочастицы"
+            />
+            <h2>Мастер-класс по созданию микрочастицы</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+
+          <div class="eventsProgramText eventsWalksText">
+            <p>
+              На прогулку можно прийти самостоятельно или забронировать гида.
+            </p>
+          </div>
+
+          <article class="eventsCatalogCard eventsWalksCardTwo">
+            <div class="eventsCatalogMeta">
+              <span>Экскурсия</span>
+              <time datetime="2026-10-18">18 окт. 2026</time>
+            </div>
+            <img
+              src="images/posters/halftone2.png"
+              alt="Афиша экскурсии на стрекозе"
+            />
+            <h2>Знакомство со стрекозами</h2>
+            <a class="button eventCardButton" href="events.html">Подробнее</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog
+      class="ticketModal"
+      id="ticketModal"
+      aria-labelledby="ticketModalTitle"
+    >
+      <div class="ticketModalContent">
+        <button
+          class="ticketModalClose"
+          type="button"
+          aria-label="Закрыть окно"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="ticketModalHeading">
+          <p>Билеты в Микропарк</p>
+          <h2 id="ticketModalTitle">Запланируйте визит</h2>
+        </div>
+
+        <form class="ticketForm">
+          <label>
+            <span>Имя</span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              placeholder="Как к вам обращаться"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Электронная почта</span>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="example@example.com"
+              required
+            />
+          </label>
+
+          <div class="ticketFormRow">
+            <label>
+              <span>Дата визита</span>
+              <input type="date" name="date" required />
+            </label>
+
+            <label>
+              <span>Количество</span>
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+            </label>
+          </div>
+
+          <button class="button ticketFormSubmit" type="submit">
+            Оформить билет
+          </button>
+          <p class="ticketFormStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </dialog>
+
+    <footer class="siteFooter">
+      <div class="footerColumn">
+        <a href="tel:+78006989080">+7 (800) 698-90-80</a>
+        <p>Круглосуточная связь</p>
+        <a href="mailto:micropark@mail.ru">MICROPARK@MAIL.RU</a>
+        <p>Поддержка</p>
+      </div>
+      <div class="footerColumn">
+        <h2>ПОСЕТИТЕЛЯМ</h2>
+        <a href="map.html">Интерактивная карта</a>
+        <a href="events.html">События</a>
+        <a href="shop.html">Магазин</a>
+      </div>
+      <div class="footerColumn footerSubscribe">
+        <h2>НОВОСТИ</h2>
+        <p>
+          Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.
+        </p>
+        <form>
+          <input
+            type="email"
+            aria-label="Электронная почта"
+            placeholder="example@example.com"
+          />
+          <button type="submit">Подписаться</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
