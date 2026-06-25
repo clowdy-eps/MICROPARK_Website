@@ -1,8 +1,9 @@
 const categoryLinks = [...document.querySelectorAll('[data-category-link]')]
 const productRows = [...document.querySelectorAll('[data-category]')]
+const productRowsElement = document.querySelector('.productRows')
 const cartCount = document.querySelector('#cartCount')
 const mainMenu = document.querySelector('.mainMenu')
-const burger = document.querySelector('#burger')
+const shopBurger = document.querySelector('#burger')
 
 let totalItems = 1
 
@@ -100,7 +101,7 @@ function renderQuantity(product, quantity) {
   }
 }
 
-document.querySelector('.productRows').addEventListener('click', (event) => {
+productRowsElement?.addEventListener('click', (event) => {
   const product = event.target.closest('[data-product]')
   if (!product) return
 
@@ -122,14 +123,12 @@ document.querySelector('.productRows').addEventListener('click', (event) => {
     renderQuantity(product, nextQuantity)
   }
 
-  cartCount.textContent = String(totalItems)
-})
-
-burger?.addEventListener('click', () => {
-  burger.classList.toggle('active')
+  if (cartCount) {
+    cartCount.textContent = String(totalItems)
+  }
 })
 
 mainMenu?.addEventListener('click', (event) => {
   if (!event.target.closest('a') || window.innerWidth > 600) return
-  burger?.classList.remove('active')
+  shopBurger?.classList.remove('active')
 })

@@ -1,5 +1,6 @@
 const ticketModal = document.querySelector('#ticketModal')
 const ticketModalOpen = document.querySelector('#ticketModalOpen')
+const ticketModalOpenCards = [...document.querySelectorAll('.eventsCatalogCard')]
 const ticketModalClose = ticketModal?.querySelector('.ticketModalClose')
 const ticketForm = ticketModal?.querySelector('.ticketForm')
 const ticketFormStatus = ticketModal?.querySelector('.ticketFormStatus')
@@ -7,11 +8,15 @@ const visitDateInput = ticketForm?.querySelector('input[type="date"]')
 
 if (
   ticketModal &&
-  ticketModalOpen &&
   ticketModalClose &&
   ticketForm &&
   ticketFormStatus
 ) {
+  const ticketModalOpenControls = [
+    ticketModalOpen,
+    ...ticketModalOpenCards,
+  ].filter(Boolean)
+
   if (visitDateInput) {
     const today = new Date()
     const timezoneOffset = today.getTimezoneOffset() * 60000
@@ -27,10 +32,31 @@ if (
     ticketFormStatus.textContent = ''
   }
 
-  ticketModalOpen.addEventListener('click', () => {
+  const openTicketModal = () => {
+    if (ticketModal.open) return
+
     ticketFormStatus.textContent = ''
     ticketModal.showModal()
     document.body.classList.add('modalOpen')
+  }
+
+  ticketModalOpenControls.forEach((control) => {
+    control.setAttribute('aria-haspopup', 'dialog')
+    control.setAttribute('aria-controls', 'ticketModal')
+
+    if (control.classList.contains('eventsCatalogCard')) {
+      control.setAttribute('role', 'button')
+      control.setAttribute('tabindex', '0')
+    }
+
+    control.addEventListener('click', openTicketModal)
+
+    control.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return
+
+      event.preventDefault()
+      openTicketModal()
+    })
   })
 
   ticketModalClose.addEventListener('click', closeTicketModal)

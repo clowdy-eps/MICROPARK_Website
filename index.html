@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
     <title>Микропарк</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascripts/scripts.js" defer></script>
@@ -10,6 +11,9 @@
   </head>
   <body>
     <div id="burger"></div>
+    <a class="mobileLogo" href="index.html" aria-label="На главную">
+      <img src="./images/icon.svg" alt="" />
+    </a>
 
     <nav class="mainMenu">
       <div class="blockMenu">
@@ -48,6 +52,26 @@
           aria-controls="ticketModal"
         >
           Купить билет
+        </button>
+      </div>
+    </section>
+
+    <section class="homePhotoLift" aria-label="Фотографии Микропарка">
+      <div class="homePhotoLiftTrack">
+        <button class="homePhotoCard homePhotoCardSmall" type="button">
+          <img src="images/renders/Ants-close.png" alt="Миниатюрная зона муравьёв" />
+        </button>
+        <button class="homePhotoCard homePhotoCardSmall" type="button">
+          <img src="images/insects/fish1.png" alt="Рыба под водой" />
+        </button>
+        <button class="homePhotoCard homePhotoCardLarge" type="button">
+          <img src="images/renders/lakeRelax.png" alt="Пруд и цветы Микропарка" />
+        </button>
+        <button class="homePhotoCard homePhotoCardSmall" type="button">
+          <img src="images/insects/bee1.png" alt="Пчела крупным планом" />
+        </button>
+        <button class="homePhotoCard homePhotoCardSmall" type="button">
+          <img src="images/insects/dragonfly1.png" alt="Стрекоза на белой поверхности" />
         </button>
       </div>
     </section>
@@ -167,7 +191,9 @@
 
     <!-- события -->
     <section class="section_4">
-      <h3>Ближайшие события</h3>
+      <h3>
+        <a class="sectionTitleLink" href="events.html">Ближайшие события</a>
+      </h3>
       <div class="events">
         <article class="eventCard">
           <div class="eventMeta">
@@ -179,12 +205,6 @@
             alt="Афиша прогулки со стрекозами"
           />
           <h4>Знакомство со стрекозами</h4>
-          <a
-            class="button eventCardButton"
-            href="events.html"
-            aria-label="Подробнее о знакомстве со стрекозами"
-            >Подробнее</a
-          >
         </article>
 
         <article class="eventCard">
@@ -197,12 +217,6 @@
             alt="Афиша мастер-класса с пластилиновой пчелой"
           />
           <h4>Слепи жителя Микропарка</h4>
-          <a
-            class="button eventCardButton"
-            href="events.html"
-            aria-label="Подробнее о мастер-классе по лепке"
-            >Подробнее</a
-          >
         </article>
 
         <article class="eventCard">
@@ -215,12 +229,6 @@
             alt="Афиша лекции о микромире"
           />
           <h4>Микромир под объективом</h4>
-          <a
-            class="button eventCardButton"
-            href="events.html"
-            aria-label="Подробнее о лекции про микромир"
-            >Подробнее</a
-          >
         </article>
 
         <article class="eventCard">
@@ -233,12 +241,6 @@
             alt="Афиша экскурсии по Микропарку"
           />
           <h4>По следам больших насекомых</h4>
-          <a
-            class="button eventCardButton"
-            href="events.html"
-            aria-label="Подробнее об экскурсии по парку"
-            >Подробнее</a
-          >
         </article>
       </div>
     </section>
@@ -248,12 +250,12 @@
       <h3>Мы на карте</h3>
       <div class="map">
         <div class="mapEmbed" aria-label="Карта проезда к Микропарку">
-          <script
-            type="text/javascript"
-            charset="utf-8"
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01c25f0030a46891ed7d4246087b6fef55ee49e8f1d2f6ea7738fda66f6b2acc&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-          ></script>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A01c25f0030a46891ed7d4246087b6fef55ee49e8f1d2f6ea7738fda66f6b2acc&amp;source=constructor"
+            title="Карта проезда к Микропарку"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <div class="mapInfo">
@@ -267,7 +269,7 @@
             Одинцово · южный вход в парк · остановка «Прилесная»
           </p>
           <div class="mapActions">
-            <a class="button mapRouteButton" href="map.html">Открыть маршрут</a>
+            <a class="button mapRouteButton" href="404.html">Открыть маршрут</a>
             <a
               class="button mapRouteButton"
               href="images/map.svg"
@@ -368,7 +370,11 @@
       <h2>НОВОСТИ</h2>
       <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
       <form>
-        <input type="email" placeholder="example@example.com" />
+        <input
+          type="email"
+          aria-label="Электронная почта"
+          placeholder="example@example.com"
+        />
         <button type="submit">Подписаться</button>
       </form>
     </div>

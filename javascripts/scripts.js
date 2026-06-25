@@ -1,11 +1,9 @@
 // скрипты для всех страниц на сайте
 
-burger()
+{
+  const burgerButton = document.querySelector('#burger')
 
-function burger() {
-  let burger = document.querySelector('#burger')
-
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active')
+  burgerButton?.addEventListener('click', () => {
+    burgerButton.classList.toggle('active')
   })
 }

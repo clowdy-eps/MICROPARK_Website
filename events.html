@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
     <title>События</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/events.css" />
@@ -11,6 +12,9 @@
   </head>
   <body class="eventsPage">
     <div id="burger"></div>
+    <a class="mobileLogo" href="index.html" aria-label="На главную">
+      <img src="./images/icon.svg" alt="" />
+    </a>
 
     <nav class="mainMenu">
       <div class="blockMenu">
@@ -39,7 +43,6 @@
             alt="Афиша лекции о молекулах и атомах"
           />
           <h2>Молекулы и атомы: новый взгляд</h2>
-          <a class="button eventCardButton" href="events.html">Подробнее</a>
         </article>
 
         <article class="eventsCatalogCard eventsCatalogCardTwo">
@@ -52,7 +55,6 @@
             alt="Афиша экскурсии о стрекозах"
           />
           <h2>Знакомство со стрекозами</h2>
-          <a class="button eventCardButton" href="events.html">Подробнее</a>
         </article>
 
         <article class="eventsCatalogCard eventsCatalogCardThree">
@@ -65,7 +67,6 @@
             alt="Афиша мастер-класса по работе с микроскопом"
           />
           <h2>Микромир под объективом</h2>
-          <a class="button eventCardButton" href="events.html">Подробнее</a>
         </article>
 
         <div class="eventsCatalogIntro">
@@ -76,31 +77,17 @@
           </p>
         </div>
 
-        <article class="eventsCatalogCard eventsCatalogCardFour">
+        <a
+          class="eventsFeature eventsFeatureFirst"
+          href="https://clowdy-eps.github.io/micropark/"
+        >
           <div class="eventsCatalogMeta">
-            <span>Экскурсия</span>
-            <time datetime="2026-07-19">19 июл. 2026</time>
+            <span>Спецпроект</span>
+            <time datetime="2026-08-30">30 авг. 2026</time>
           </div>
-          <img
-            src="images/posters/walk2.png"
-            alt="Афиша прогулки по Микропарку"
-          />
-          <h2>Прогулка по тропам Микропарка</h2>
-          <a class="button eventCardButton" href="events.html">Подробнее</a>
-        </article>
-
-        <article class="eventsCatalogCard eventsCatalogCardFive">
-          <div class="eventsCatalogMeta">
-            <span>Мастер-класс</span>
-            <time datetime="2026-07-26">26 июл. 2026</time>
-          </div>
-          <img
-            src="images/posters/plasticine2.png"
-            alt="Афиша мастер-класса по лепке насекомого"
-          />
-          <h2>Слепи жителя Микропарка</h2>
-          <a class="button eventCardButton" href="events.html">Подробнее</a>
-        </article>
+          <img src="images/posters/webposter2.png" alt="Схема Микропарка" />
+          <h2>Изучи Микропарк</h2>
+        </a>
       </div>
 
       <section
@@ -120,7 +107,6 @@
               alt="Афиша мастер-класса с пластилиновым кузнечиком"
             />
             <h2>Лепка больших кузнечиков</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <div class="eventsWorkshopText">
@@ -140,7 +126,6 @@
               alt="Афиша экскурсии о светлячках"
             />
             <h2>Знакомство со светлячками</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <article class="eventsCatalogCard eventsWorkshopCardThree">
@@ -153,7 +138,6 @@
               alt="Афиша мастер-класса о пластилиновых насекомых"
             />
             <h2>Пластилиновые насекомые</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <article class="eventsCatalogCard eventsWorkshopCardFour">
@@ -166,20 +150,31 @@
               alt="Афиша прогулки по Микропарку"
             />
             <h2>Новые микро-тропинки</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
-          <a
-            class="eventsFeature"
-            href="https://clowdy-eps.github.io/micropark/"
-          >
+          <article class="eventsCatalogCard eventsCatalogCardFour eventsWorkshopSwapOne">
             <div class="eventsCatalogMeta">
-              <span>Спецпроект</span>
-              <time datetime="2026-08-30">30 авг. 2026</time>
+              <span>Экскурсия</span>
+              <time datetime="2026-07-19">19 июл. 2026</time>
             </div>
-            <img src="images/map.svg" alt="Схема Микропарка" />
-            <h2>Изучи Микропарк</h2>
-          </a>
+            <img
+              src="images/posters/walk2.png"
+              alt="Афиша прогулки по Микропарку"
+            />
+            <h2>Прогулка по тропам Микропарка</h2>
+          </article>
+
+          <article class="eventsCatalogCard eventsCatalogCardFive eventsWorkshopSwapTwo">
+            <div class="eventsCatalogMeta">
+              <span>Мастер-класс</span>
+              <time datetime="2026-07-26">26 июл. 2026</time>
+            </div>
+            <img
+              src="images/posters/plasticine2.png"
+              alt="Афиша мастер-класса по лепке насекомого"
+            />
+            <h2>Слепи жителя Микропарка</h2>
+          </article>
         </div>
       </section>
 
@@ -268,7 +263,6 @@
               alt="Афиша воркшопа под микроскопом"
             />
             <h2>Работа под микроскопом</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <div class="eventsProgramText eventsToursText">
@@ -288,7 +282,6 @@
               alt="Афиша с приглашением пойти гулять"
             />
             <h2>Новые маршруты Микропарка</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <article class="eventsCatalogCard eventsToursCardThree">
@@ -301,7 +294,6 @@
               alt="Афиша третьей лекции"
             />
             <h2>Редкие виды нано-растений</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <article class="eventsCatalogCard eventsToursCardFour">
@@ -314,7 +306,6 @@
               alt="Афиша мастер-класса с пластилиновым кузнечиком"
             />
             <h2>У нас живут большие пчёлы</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <a
@@ -326,7 +317,7 @@
               <time datetime="2026-10-04">04 окт. 2026</time>
             </div>
             <img
-              src="images/pages/page08.png"
+              src="images/posters/webposter3.png"
               alt="Страница исследовательского путеводителя"
             />
             <h2>Попробуй себя в роли исследователя</h2>
@@ -348,7 +339,6 @@
               alt="Афиша мастер-класса по созданию микрочастицы"
             />
             <h2>Мастер-класс по созданию микрочастицы</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
 
           <div class="eventsProgramText eventsWalksText">
@@ -367,7 +357,6 @@
               alt="Афиша экскурсии на стрекозе"
             />
             <h2>Знакомство со стрекозами</h2>
-            <a class="button eventCardButton" href="events.html">Подробнее</a>
           </article>
         </div>
       </section>

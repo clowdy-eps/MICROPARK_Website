@@ -1,3 +1,92 @@
+const mapArtwork = document.querySelector('.mapArtwork')
+const mapPopup = document.querySelector('.mapPopup')
+const mapPoints = [...document.querySelectorAll('.mapPoint')]
+const mapPlaces = [...document.querySelectorAll('.mapPlace')]
+
+if (mapArtwork && mapPopup && mapPoints.length > 0) {
+  const popupClose = mapPopup.querySelector('.mapPopupClose')
+  const popupLabel = mapPopup.querySelector('.mapPopupLabel')
+  const popupTitle = mapPopup.querySelector('.mapPopupTitle')
+  const popupText = mapPopup.querySelector('.mapPopupText')
+  let activePoint = null
+
+  function closeMapPopup() {
+    mapPopup.classList.remove('open', 'below')
+    mapPopup.setAttribute('aria-hidden', 'true')
+    mapPoints.forEach((point) => point.setAttribute('aria-expanded', 'false'))
+    mapPlaces.forEach((place) => place.classList.remove('active'))
+    activePoint = null
+  }
+
+  function openMapPopup(point) {
+    const artworkRect = mapArtwork.getBoundingClientRect()
+    const pointRect = point.getBoundingClientRect()
+    const pointCenterX = pointRect.left - artworkRect.left + pointRect.width / 2
+    const pointCenterY = pointRect.top - artworkRect.top + pointRect.height / 2
+    const safeX = Math.max(16, Math.min(pointCenterX, artworkRect.width - 16))
+    const placeBelow = pointCenterY < 190
+
+    popupLabel.textContent = point.dataset.placeKind || ''
+    popupTitle.textContent = point.dataset.placeTitle || ''
+    popupText.textContent = point.dataset.placeDescription || ''
+    mapPopup.style.left = `${safeX}px`
+    mapPopup.style.top = `${Math.max(16, pointCenterY)}px`
+    mapPopup.classList.toggle('below', placeBelow)
+    mapPopup.classList.add('open')
+    mapPopup.setAttribute('aria-hidden', 'false')
+    mapPoints.forEach((mapPoint) => {
+      mapPoint.setAttribute('aria-expanded', String(mapPoint === point))
+    })
+    mapPlaces.forEach((place) => {
+      place.classList.toggle('active', place.dataset.placeTarget === point.dataset.placeId)
+    })
+    activePoint = point
+  }
+
+  mapPoints.forEach((point) => {
+    point.addEventListener('click', () => {
+      if (point === activePoint && mapPopup.classList.contains('open')) {
+        closeMapPopup()
+        return
+      }
+
+      openMapPopup(point)
+    })
+  })
+
+  mapPlaces.forEach((place) => {
+    place.addEventListener('click', () => {
+      const point = mapPoints.find(
+        (mapPoint) => mapPoint.dataset.placeId === place.dataset.placeTarget,
+      )
+
+      if (!point) return
+
+      openMapPopup(point)
+    })
+  })
+
+  popupClose.addEventListener('click', closeMapPopup)
+
+  document.addEventListener('click', (event) => {
+    if (!mapPopup.classList.contains('open')) return
+    if (mapArtwork.contains(event.target)) return
+    if (event.target.closest('.mapPlace')) return
+
+    closeMapPopup()
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMapPopup()
+  })
+
+  window.addEventListener('resize', () => {
+    if (!activePoint) return
+
+    openMapPopup(activePoint)
+  })
+}
+
 const guide = document.querySelector('.guideViewer')
 
 if (guide) {

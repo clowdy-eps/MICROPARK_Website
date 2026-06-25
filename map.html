@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
     <title>Карта</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascripts/scripts.js" defer></script>
@@ -10,6 +11,9 @@
   </head>
   <body class="mapPage">
     <div id="burger"></div>
+    <a class="mobileLogo" href="index.html" aria-label="На главную">
+      <img src="./images/icon.svg" alt="" />
+    </a>
 
     <nav class="mainMenu">
       <div class="blockMenu">
@@ -36,28 +40,153 @@
 
       <section class="mapExplorer">
         <figure class="mapCanvas">
-          <img
-            src="images/map.svg"
-            alt="Схема Микропарка с водоёмом, растениями и зонами обитания насекомых"
-          />
+          <div class="mapArtwork">
+            <img
+              class="mapArtworkImage"
+              src="images/map.svg"
+              alt="Схема Микропарка с водоёмом, растениями и зонами обитания насекомых"
+            />
+            <div class="mapPoints" aria-label="Точки наблюдения на карте">
+              <button
+                class="mapPoint"
+                style="--x: 22%; --y: 34%"
+                type="button"
+                data-place-id="water"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Водомерки"
+                title="Водомерки"
+                data-place-title="Водная гладь"
+                data-place-kind="Водомерки"
+                data-place-description="Тихий участок пруда, где водомерки скользят по поверхности воды и расходятся короткими рывками от падающих листьев."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+              <button
+                class="mapPoint"
+                style="--x: 50%; --y: 37%"
+                type="button"
+                data-place-id="fish"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Рыбы"
+                title="Рыбы"
+                data-place-title="Подводная кромка"
+                data-place-kind="Рыбы"
+                data-place-description="Прохладная зона у камней и водных растений. Здесь удобно наблюдать за рыбой и спокойным движением воды."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+              <button
+                class="mapPoint"
+                style="--x: 64%; --y: 25%"
+                type="button"
+                data-place-id="flowers"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Пчёлы"
+                title="Пчёлы"
+                data-place-title="Цветочная поляна"
+                data-place-kind="Пчёлы"
+                data-place-description="Солнечная часть парка с крупными цветами. Пчёлы чаще всего появляются здесь утром и в первой половине дня."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+              <button
+                class="mapPoint"
+                style="--x: 64%; --y: 54%"
+                type="button"
+                data-place-id="viewpoint"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Стрекозы"
+                title="Стрекозы"
+                data-place-title="Обзорная площадка"
+                data-place-kind="Стрекозы"
+                data-place-description="Открытая точка у воды, где стрекозы зависают в воздухе и резко меняют направление над дорожкой."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+              <button
+                class="mapPoint"
+                style="--x: 47%; --y: 80%"
+                type="button"
+                data-place-id="trail"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Муравьи"
+                title="Муравьи"
+                data-place-title="Тропа муравьёв"
+                data-place-kind="Муравьи"
+                data-place-description="Низкая зона маршрутов среди листьев и миниатюрных холмов. Муравьи здесь быстро перестраивают свои дорожки."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+              <button
+                class="mapPoint"
+                style="--x: 70%; --y: 76%"
+                type="button"
+                data-place-id="grass"
+                aria-haspopup="dialog"
+                aria-controls="mapPointPopup"
+                aria-expanded="false"
+                aria-label="Светлячки"
+                title="Светлячки"
+                data-place-title="Тихие заросли"
+                data-place-kind="Светлячки"
+                data-place-description="Затенённый уголок у травы. Вечером здесь можно заметить мягкие зелёные вспышки светлячков."
+              >
+                <img src="images/insects/map/point.svg" alt="" />
+              </button>
+            </div>
+            <div
+              class="mapPopup"
+              id="mapPointPopup"
+              role="dialog"
+              aria-live="polite"
+              aria-hidden="true"
+            >
+              <button class="mapPopupClose" type="button" aria-label="Закрыть описание">
+                ×
+              </button>
+              <p class="mapPopupLabel"></p>
+              <h2 class="mapPopupTitle"></h2>
+              <p class="mapPopupText"></p>
+            </div>
+          </div>
         </figure>
 
         <aside class="mapSidebar">
           <div class="mapSidebarTop">
-            <p class="mapSidebarLabel">Обитатели</p>
-            <p class="mapSidebarCount">8 видов</p>
+            <p class="mapSidebarLabel">Места</p>
+            <p class="mapSidebarCount">6 точек</p>
           </div>
 
-          <nav class="insects-list">
-            <a href="insects.html">Водомерки</a>
-            <a href="insects.html">Рыбы</a>
-            <a href="insects.html">Гусеницы</a>
-            <a href="insects.html">Пчёлы</a>
-            <a href="insects.html">Стрекозы</a>
-            <a href="insects.html">Муравьи</a>
-            <a href="insects.html">Светлячки</a>
-            <a href="insects.html">Мотыльки</a>
-          </nav>
+          <div class="mapPlaces" aria-label="Места на карте">
+            <button class="mapPlace" type="button" data-place-target="water">
+              Водная гладь
+            </button>
+            <button class="mapPlace" type="button" data-place-target="fish">
+              Подводная кромка
+            </button>
+            <button class="mapPlace" type="button" data-place-target="flowers">
+              Цветочная поляна
+            </button>
+            <button class="mapPlace" type="button" data-place-target="viewpoint">
+              Обзорная площадка
+            </button>
+            <button class="mapPlace" type="button" data-place-target="trail">
+              Тропа муравьёв
+            </button>
+            <button class="mapPlace" type="button" data-place-target="grass">
+              Тихие заросли
+            </button>
+          </div>
 
           <a href="insects.html" class="button mapButton">
             Изучить обитателей
@@ -81,7 +210,7 @@
             />
             <div class="residentCardContent">
               <h4>Шелкопряды</h4>
-              <a href="insects.html">Узнать подробнее</a>
+              <a class="button residentMoreButton" href="insects.html">Узнать подробнее</a>
             </div>
           </article>
 
@@ -92,7 +221,7 @@
             />
             <div class="residentCardContent">
               <h4>Светлячки</h4>
-              <a href="insects.html">Узнать подробнее</a>
+              <a class="button residentMoreButton" href="insects.html">Узнать подробнее</a>
             </div>
           </article>
 
@@ -100,7 +229,7 @@
             <img src="images/insects/ant1.png" alt="Муравей крупным планом" />
             <div class="residentCardContent">
               <h4>Муравьи</h4>
-              <a href="insects.html">Узнать подробнее</a>
+              <a class="button residentMoreButton" href="insects.html">Узнать подробнее</a>
             </div>
           </article>
 
@@ -108,7 +237,7 @@
             <img src="images/insects/fish1.png" alt="Рыба под водой" />
             <div class="residentCardContent">
               <h4>Рыбы</h4>
-              <a href="insects.html">Узнать подробнее</a>
+              <a class="button residentMoreButton" href="insects.html">Узнать подробнее</a>
             </div>
           </article>
         </div>
@@ -122,7 +251,7 @@
             наблюдения.
           </p>
           <a
-            class="button mapGuideDownload"
+            class="button residentMoreButton mapGuideDownload"
             href="images/map.svg"
             download="map-micropark.svg"
           >
@@ -185,7 +314,11 @@
       <h2>НОВОСТИ</h2>
       <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
       <form>
-        <input type="email" placeholder="example@example.com" />
+        <input
+          type="email"
+          aria-label="Электронная почта"
+          placeholder="example@example.com"
+        />
         <button type="submit">Подписаться</button>
       </form>
     </div>

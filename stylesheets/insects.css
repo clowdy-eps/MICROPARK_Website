@@ -32,6 +32,7 @@
   grid-row: 1;
   align-self: start;
   text-align: left;
+  transform: translateY(42px);
 }
 
 .residentsIntro h1 {
@@ -49,14 +50,15 @@
 .residentsListWrap {
   grid-column: 2;
   grid-row: 1 / span 3;
-  align-self: center;
+  align-self: start;
   min-width: 0;
+  margin-top: 42px;
 }
 
 .residentsCatalog {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 22px;
 }
 
 .residentEntry {
@@ -131,7 +133,7 @@
   min-width: 0;
   width: min(29vw, 560px);
   margin: 0;
-  transform: translateY(85px);
+  transform: translateY(20px);
 }
 
 .residentPhotoFrame img {
@@ -150,7 +152,7 @@
   min-height: 60px;
   font-size: 0.95vw;
   opacity: 1;
-  transform: translateY(18px);
+  transform: translateY(-47px);
 }
 
 .residentModal {
@@ -284,6 +286,7 @@
   .residentsIntro {
     grid-column: 1;
     grid-row: 1;
+    transform: none;
   }
 
   .residentsIntro h1 {
@@ -314,6 +317,7 @@
   .residentsListWrap {
     grid-column: 2;
     grid-row: 1 / span 2;
+    margin-top: 0;
   }
 
   .residentMoreButton {
@@ -338,6 +342,70 @@
   }
 }
 
+@media screen and (min-width: 1001px) and (max-width: 1500px) and (min-height: 960px) and (max-height: 1100px) {
+  .residentsMain {
+    height: auto;
+    min-height: 0;
+    padding-top: 132px;
+    padding-bottom: 70px;
+  }
+
+  .residentsPage .mainMenuLink {
+    font-size: 15px;
+  }
+
+  .residentsPage .logo {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+
+  .residentsExperience {
+    grid-template-columns: minmax(360px, 31vw) minmax(430px, 34vw);
+    column-gap: 12vw;
+    height: auto;
+  }
+
+  .residentsIntro h1 {
+    max-width: 320px;
+    font-size: 18px;
+  }
+
+  .residentsListWrap {
+    margin-top: 40px;
+  }
+
+  .residentsCatalog {
+    gap: 24px;
+  }
+
+  .residentOption {
+    font-size: 42px;
+  }
+
+  .residentDescription {
+    max-width: 470px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  .residentEntry.active .residentDescription {
+    max-height: 72px;
+    margin-top: 10px;
+  }
+
+  .residentPhotoFrame,
+  .residentMoreButton {
+    width: 420px;
+  }
+
+  .residentMoreButton {
+    min-height: 62px;
+    font-size: 15px;
+    transform: translateY(-134px);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .residentsMain {
     padding: 88px 18px 56px;
@@ -346,12 +414,22 @@
   .residentsExperience {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    justify-items: start;
     gap: 28px;
+  }
+
+  .residentsIntro,
+  .residentPhotoFrame,
+  .residentMoreButton {
+    justify-self: start;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .residentsIntro h1 {
     max-width: 280px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .residentPhotoFrame {
@@ -361,12 +439,19 @@
   }
 
   .residentPhotoFrame img {
-    height: 56vw;
-    min-height: 260px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50vw;
+    min-height: 230px;
+    object-position: left center;
+  }
+
+  .residentPhoto[src$='silkworm.png'] {
+    object-position: 35% center;
   }
 
   .residentsListWrap {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
   }
 
@@ -393,7 +478,7 @@
 
   .residentMoreButton {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
     width: 100%;
     min-height: 54px;
     font-size: 14px;

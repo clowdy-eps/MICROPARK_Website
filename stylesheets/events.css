@@ -51,14 +51,20 @@
   display: flex;
   min-width: 0;
   flex-direction: column;
-  padding: 0.85vw;
-  border-radius: 8px;
+  padding: 0.85vw 0.85vw 1.2vw;
+  border-radius: 0;
   background-color: #ececeb;
+  cursor: pointer;
   transition: background-color ease 0.25s;
 }
 
 .eventsCatalogCard:hover {
   background-color: #e3e3e1;
+}
+
+.eventsCatalogCard:focus-visible {
+  outline: 1px solid #222222;
+  outline-offset: 4px;
 }
 
 .eventsCatalogMeta {
@@ -78,7 +84,7 @@
 .eventsCatalogMeta span {
   padding: 0.45vw 0.65vw;
   border: 1px solid #b8b8b5;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .eventsCatalogMeta time {
@@ -89,7 +95,7 @@
   display: block;
   width: 64%;
   aspect-ratio: 0.707 / 1;
-  margin: 0 auto 1vw;
+  margin: 0 auto 1.35vw;
   object-fit: cover;
   box-shadow: 0 0.4vw 1vw rgb(0 0 0 / 0.04);
 }
@@ -99,8 +105,8 @@
   margin-bottom: 0.75vw;
   color: #292929;
   font-family: 'ABC MonumentGrotesk Regular', sans-serif;
-  font-size: clamp(12px, 0.88vw, 17px);
-  line-height: 1.08;
+  font-size: clamp(14px, 1vw, 19px);
+  line-height: 1.1;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -207,6 +213,11 @@
     color ease 0.25s;
 }
 
+.eventsFeatureFirst {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
 .eventsFeature:hover,
 .eventsFeature:focus-visible {
   background-color: #2a2a2a;
@@ -227,7 +238,6 @@
   width: 100%;
   aspect-ratio: 1.64 / 1;
   object-fit: cover;
-  filter: invert(1) sepia(1) saturate(8) hue-rotate(62deg) contrast(1.2);
 }
 
 .eventsFeature h2 {
@@ -244,19 +254,29 @@
   content: ' ↗';
 }
 
+.eventsWorkshopSwapOne {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.eventsWorkshopSwapTwo {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .eventsPhotoSection {
   margin: 7vw calc(-1 * 5.8vw) 0;
   overflow: hidden;
 }
 
 .eventsPhotoSection > h2 {
-  margin: 0 5.8vw 2.4vw;
+  margin: 0 5.8vw 2.4vw calc(6.8vw + ((100vw - 14.6vw) / 4));
   padding: 0;
   font-family: 'ABC MonumentGrotesk Mono', monospace;
-  font-size: 44px;
-  line-height: 0.94;
-  letter-spacing: 0;
-  text-align: center;
+  font-size: 2vw;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -381,6 +401,12 @@
   }
 }
 
+@media screen and (min-width: 1001px) and (max-width: 1500px) and (min-height: 960px) and (max-height: 1100px) {
+  .eventsCatalog {
+    padding-top: 132px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .eventsCatalog {
     padding-top: 96px;
@@ -423,7 +449,7 @@
   .eventsWalksCardTwo {
     grid-column: auto;
     grid-row: auto;
-    padding: 14px;
+    padding: 14px 14px 20px;
   }
 
   .eventsCatalogMeta {
@@ -437,12 +463,12 @@
   }
 
   .eventsCatalogCard img {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 
   .eventsCatalogCard h2 {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .eventsCatalogCard .eventCardButton {
@@ -489,8 +515,8 @@
   }
 
   .eventsPhotoSection > h2 {
-    margin-bottom: 32px;
-    font-size: 42px;
+    margin: 0 5.8vw 32px;
+    font-size: 24px;
   }
 
   .eventsPhotoTrack {
@@ -549,22 +575,38 @@
   .eventsCatalogGrid,
   .eventsWorkshopGrid,
   .eventsProgramGrid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 12px;
   }
 
   .eventsCatalogCard {
     width: 100%;
-    max-width: 440px;
+    max-width: none;
+    padding: 10px 10px 16px;
+  }
+
+  .eventsCatalogMeta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 46px;
+    margin-bottom: 12px;
+    font-size: 8px;
+  }
+
+  .eventsCatalogMeta span {
+    padding: 6px 8px;
   }
 
   .eventsCatalogCard img {
-    width: 62%;
+    width: 70%;
+    margin-bottom: 16px;
   }
 
   .eventsCatalogCard h2 {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.12;
   }
 
   .eventsCatalogCard .eventCardButton {
@@ -574,7 +616,7 @@
   }
 
   .eventsCatalogIntro {
-    grid-column: auto;
+    grid-column: 1 / -1;
     grid-row: auto;
     order: 0;
     padding: 18px 0 26px;
@@ -588,7 +630,7 @@
 
   .eventsWorkshopText,
   .eventsFeature {
-    grid-column: auto;
+    grid-column: 1 / -1;
     grid-row: auto;
   }
 
@@ -610,7 +652,7 @@
 
   .eventsPhotoSection > h2 {
     margin: 0 18px 26px;
-    font-size: 32px;
+    font-size: 24px;
     text-align: left;
   }
 
@@ -630,6 +672,7 @@
   }
 
   .eventsProgramText {
+    grid-column: 1 / -1;
     padding: 4px 0 14px;
   }
 

@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
     <title>Магазин — Микропарк</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/shop.css" />
+    <script src="javascripts/scripts.js" defer></script>
     <script src="javascripts/shop.js" defer></script>
   </head>
 
   <body class="shopPage">
     <div id="burger"></div>
+    <a class="mobileLogo" href="index.html" aria-label="На главную">
+      <img src="./images/icon.svg" alt="" />
+    </a>
     <nav class="mainMenu">
       <div class="blockMenu">
         <a class="mainMenuLink" href="index.html">МИКРОПАРК</a>
@@ -209,7 +214,6 @@
         </section>
       </div>
     </main>
-  </body>
   <footer class="siteFooter">
     <div class="footerColumn">
       <a href="tel:+78006989080">+7 (800) 698-90-80</a>
@@ -227,9 +231,14 @@
       <h2>НОВОСТИ</h2>
       <p>Подпишитесь, чтобы первыми узнавать о новых событиях в Микропарке.</p>
       <form>
-        <input type="email" placeholder="example@example.com" />
+        <input
+          type="email"
+          aria-label="Электронная почта"
+          placeholder="example@example.com"
+        />
         <button type="submit">Подписаться</button>
       </form>
     </div>
   </footer>
+  </body>
 </html>
