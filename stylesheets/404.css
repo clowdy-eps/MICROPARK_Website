@@ -1,10 +1,7 @@
 @import 'reset.css';
 @import 'fonts.css';
-<<<<<<< Updated upstream
-=======
 @import 'layout.css';
 
 * {
   box-sizing: border-box;
 }
->>>>>>> Stashed changes

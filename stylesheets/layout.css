@@ -10,17 +10,9 @@ html {
 
 body {
   width: 100%;
-<<<<<<< Updated upstream
-  min-height: 100%;
-  background-color: #fff;
-  font-family: 'ABCMonumentGrotesk', sans-serif;
-  font-size: 20px;
-  color: #202020;
-=======
   height: 100%;
   background-color: #f8f8f8;
   font-family: 'ABC MonumentGrotesk Mono', sans-serif;
->>>>>>> Stashed changes
 }
 
 .section_1,
@@ -101,37 +93,21 @@ p {
   width: 100%;
   min-height: 5vw;
   justify-content: space-between;
-<<<<<<< Updated upstream
-  align-items: center;
-  padding: 1.45vw 5.2vw;
-=======
   padding: 1.6vw 6vw;
->>>>>>> Stashed changes
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-<<<<<<< Updated upstream
-  box-shadow: 0 0.45vw 1.4vw rgba(0, 0, 0, 0.12);
-=======
->>>>>>> Stashed changes
 }
 
 .blockMenu {
   display: flex;
-<<<<<<< Updated upstream
-  justify-content: space-between;
-  align-items: center;
-  width: 31%;
-  gap: 2vw;
-=======
   gap: 3vw;
 }
 
 .blockMenu2 {
   display: flex;
   gap: 3vw;
->>>>>>> Stashed changes
 }
 
 .mainMenuLink {
@@ -155,382 +131,16 @@ p {
 }
 
 .logo {
-<<<<<<< Updated upstream
-  display: block;
-  height: 1.9vw;
-  width: 1.9vw;
-  object-fit: contain;
-}
-
-/* главная */
-
-.homePage {
-  padding-top: 5vw;
-}
-
-.heroSection {
-  position: relative;
-  width: 100%;
-  height: 23vw;
-  overflow: hidden;
-}
-
-.heroSection img,
-.heroSection video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.ticketButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 9.6vw;
-  min-height: 3.3vw;
-  padding: 0.9vw 1.5vw;
-  background-color: #60b500;
-  color: #fff;
-  font-size: 0.95vw;
-  line-height: 1;
-  text-decoration: none;
-  transition: opacity ease 0.3s;
-}
-
-.ticketButton:hover {
-  opacity: 0.82;
-}
-
-.heroTicket {
-  position: absolute;
-  left: 5.2vw;
-  bottom: 3.8vw;
-  border: 1px solid #fff;
-  background-color: rgba(32, 32, 32, 0.12);
-}
-
-.homeTitle {
-  padding: 1vw 2vw 4vw;
-  overflow: hidden;
-}
-
-.homeTitle h1 {
-  margin: 0;
-  color: #202020;
-  font-size: clamp(64px, 15.35vw, 296px);
-  font-weight: 500;
-  line-height: 0.86;
-  letter-spacing: 0;
-  white-space: nowrap;
-}
-
-.aboutSection {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 1.6vw;
-  width: calc(100% - 10.4vw);
-  min-height: 18vw;
-  margin: 0 auto 5.4vw;
-}
-
-.aboutImageField {
-  grid-column: 2 / span 4;
-  position: relative;
-  min-height: 17vw;
-  overflow: hidden;
-  cursor: crosshair;
-}
-
-.aboutStaticImage {
-  position: absolute;
-  width: 13vw;
-  height: 6.6vw;
-  object-fit: cover;
-}
-
-.aboutStaticImage--one {
-  top: 2vw;
-  left: 5vw;
-}
-
-.aboutStaticImage--two {
-  top: 5.2vw;
-  left: 2.2vw;
-}
-
-.aboutStaticImage--three {
-  top: 7.8vw;
-  left: 6.8vw;
-}
-
-.trailImage {
-  position: absolute;
-  width: 13vw;
-  height: 7.2vw;
-  object-fit: cover;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.9);
-  animation: trailFade 1.1s ease forwards;
-  z-index: 3;
-}
-
-.aboutText {
-  grid-column: 7 / span 5;
-  align-self: center;
-  max-width: 31vw;
-}
-
-.aboutText h2,
-.infoSection h2 {
-  margin: 0 0 1.6vw;
-  font-size: 1.5vw;
-  font-weight: 400;
-  line-height: 1.1;
-}
-
-.aboutText p {
-  margin: 0 0 1.8vw;
-  max-width: 30vw;
-  font-size: 0.95vw;
-  line-height: 1.32;
-}
-
-.aboutText .ticketButton {
-  margin-left: 15vw;
-}
-
-.infoSection {
-  background-color: #efefef;
-  padding: 3.8vw 5.2vw 4.4vw;
-}
-
-.accordion {
-  border-top: 1px solid #202020;
-}
-
-.accordionItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid #bdbdbd;
-  background-color: transparent;
-  color: #202020;
-  font-family: inherit;
-  font-size: 1.12vw;
-  line-height: 1.2;
-  padding: 1.25vw 0;
-  cursor: pointer;
-}
-
-.accordionIcon {
-  position: relative;
-  width: 1.7vw;
-  height: 1.7vw;
-}
-
-.accordionIcon::before,
-.accordionIcon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #202020;
-}
-
-.accordionIcon::after {
-  transform: rotate(90deg);
-  transition: transform ease 0.3s;
-}
-
-.accordionItem.active .accordionIcon::after {
-  transform: rotate(0deg);
-}
-
-.accordionPanel {
-  display: none;
-  border-bottom: 1px solid #bdbdbd;
-  padding: 0 0 1.2vw;
-}
-
-.accordionPanel.open {
-  display: block;
-}
-
-.accordionPanel p {
-  width: 38vw;
-  margin: 0;
-  color: #606060;
-  font-size: 0.92vw;
-  line-height: 1.3;
-}
-
-.eventsPreview,
-.mapPreview {
-  width: calc(100% - 10.4vw);
-  margin: 0 auto;
-}
-
-.eventsPreview {
-  padding: 4vw 0 4.8vw;
-}
-
-.sectionLink {
-  display: inline-block;
-  color: #202020;
-  font-size: 1.45vw;
-  line-height: 1.1;
-  text-decoration: none;
-  margin-bottom: 2.5vw;
-}
-
-.eventCards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.1vw;
-}
-
-.eventCard {
-  background-color: #efefef;
-  padding: 0.9vw 0.9vw 1.35vw;
-}
-
-.eventMeta {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.7vw;
-  min-height: 2vw;
-  font-size: 0.52vw;
-  color: #202020;
-}
-
-.eventMeta span:first-child {
-  border: 1px solid #d2d2d2;
-  border-radius: 999px;
-  padding: 0.42vw 0.65vw;
-}
-
-.eventCard img {
-  display: block;
-  width: 65%;
-  aspect-ratio: 2 / 3;
-  margin: 1vw auto 1.4vw;
-  object-fit: cover;
-}
-
-.eventCard h3 {
-  min-height: 2.4vw;
-  margin: 0;
-  font-size: 0.82vw;
-  font-weight: 400;
-  line-height: 1.12;
-}
-
-.mapPreview {
-  padding-bottom: 5vw;
-}
-
-.mapPlaceholder {
-  position: relative;
-  height: 26vw;
-  overflow: hidden;
-  background:
-    linear-gradient(35deg, transparent 0 46%, rgba(246, 108, 80, 0.65) 47% 49%, transparent 50%),
-    linear-gradient(100deg, transparent 0 43%, rgba(116, 174, 218, 0.7) 44% 46%, transparent 47%),
-    linear-gradient(155deg, transparent 0 40%, rgba(189, 211, 178, 0.9) 41% 52%, transparent 53%),
-    linear-gradient(25deg, #d9edcf 0 25%, #f4f2e8 26% 48%, #d9edcf 49% 70%, #eef4ed 71%);
-}
-
-.mapPlaceholder::before,
-.mapPlaceholder::after {
-  content: '';
-  position: absolute;
-  width: 120%;
-  height: 1.2vw;
-  left: -10%;
-  background-color: rgba(255, 255, 255, 0.72);
-}
-
-.mapPlaceholder::before {
-  top: 45%;
-  transform: rotate(-6deg);
-}
-
-.mapPlaceholder::after {
-  top: 57%;
-  transform: rotate(9deg);
-}
-
-.mapPin {
-  position: absolute;
-  top: 45%;
-  left: 36%;
-  z-index: 2;
-  padding: 0.85vw 1vw 0.85vw 2.6vw;
-  background-color: #fff;
-  color: #202020;
-  font-size: 0.9vw;
-}
-
-.mapPin::before {
-  content: '';
-  position: absolute;
-  left: -1.5vw;
-  top: 50%;
-  width: 3vw;
-  height: 3vw;
-  background-color: #ff5c45;
-  border-radius: 50% 50% 50% 0;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-@keyframes trailFade {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.86);
-  }
-  15% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -58%) scale(0.98);
-  }
-=======
   margin-top: -0.2vw;
   height: 1.6vw;
   width: 1.6vw;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
->>>>>>> Stashed changes
 }
 
 /* ГЛАВНАЯ СТРАНИЦА */
 
-<<<<<<< Updated upstream
-.shopPage {
-  padding-top: 9.4vw;
-  padding-bottom: 7.4vw;
-}
-
-.productList {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 2.6vw 1.6vw;
-  width: calc(100% - 10.4vw);
-  margin: 0 auto;
-}
-
-.product {
-  grid-column: span 3;
-  background-color: #efefef;
-=======
 /* главный экран */
 main img {
   width: 100%;
@@ -547,7 +157,6 @@ main img {
 .about {
   position: relative;
   z-index: 2;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   gap: 1vw;
@@ -583,45 +192,6 @@ main img {
 
 .ticketModalContent {
   position: relative;
-<<<<<<< Updated upstream
-  min-height: 27vw;
-}
-
-.product--feature {
-  grid-column: span 5;
-}
-
-.product--right {
-  grid-column: 10 / span 3;
-}
-
-.product--bottom-left {
-  grid-column: 4 / span 3;
-}
-
-.product--bottom-wide {
-  grid-column: 7 / span 5;
-}
-
-.badge-new {
-  position: absolute;
-  top: 1vw;
-  right: 1vw;
-  background-color: #fff;
-  padding: 0.55vw 0.9vw;
-  font-size: 0.78vw;
-  color: #222;
-  z-index: 1;
-}
-
-.product-img-wrapper {
-  padding: 1.6vw 1.5vw 0;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 20vw;
-=======
   padding: 42px;
   border: 1px solid #b8b8b4;
   background-color: #f8f8f8;
@@ -837,7 +407,6 @@ body.modalOpen {
   line-height: 1.1;
   text-align: left;
   cursor: pointer;
->>>>>>> Stashed changes
 }
 
 .faqQuestion:focus-visible {
@@ -943,159 +512,6 @@ body.modalOpen {
   max-height: 24vw;
 }
 
-<<<<<<< Updated upstream
-.productInfo {
-  min-height: 4.8vw;
-  padding: 1.35vw 1.5vw 1.45vw;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1.1vw;
-}
-
-.productInfo h3 {
-  font-weight: 400;
-  font-size: 1vw;
-  line-height: 1.15;
-  margin: 0;
-  color: #222;
-}
-
-.productInfo p {
-  font-size: 1vw;
-  line-height: 1.15;
-  margin: 0;
-  color: #222;
-}
-
-.productAdd,
-.productButtons button {
-  border: 1px solid #2a2a2a;
-  background-color: transparent;
-  color: #2a2a2a;
-  font-family: inherit;
-  font-size: 0.82vw;
-  line-height: 1;
-  cursor: pointer;
-  transition:
-    background-color ease 0.3s,
-    color ease 0.3s;
-}
-
-.productAdd {
-  min-width: 6.9vw;
-  padding: 0.75vw 0.9vw;
-}
-
-.productButtons {
-  display: grid;
-  grid-template-columns: 2.2vw 2.3vw 2.2vw;
-  align-items: center;
-  min-height: 2.4vw;
-  border: 1px solid #2a2a2a;
-}
-
-.productButtons button {
-  width: 2.2vw;
-  height: 2.35vw;
-  border: 0;
-}
-
-.productButtons span {
-  font-size: 0.9vw;
-  text-align: center;
-}
-
-.productAdd:hover,
-.productButtons button:hover,
-.siteFooter button:hover {
-  background-color: #60b500;
-  color: #fff;
-}
-
-.promo-bar {
-  grid-column: 1 / -1;
-  margin: 2.9vw -5.2vw 2.6vw;
-  background-color: #60b500;
-  color: #fff;
-  text-align: center;
-  padding: 1.45vw;
-  font-size: 1.12vw;
-  line-height: 1.2;
-  width: auto;
-}
-
-.siteFooter {
-  background-color: #202020;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  gap: 4vw;
-  padding: 3.3vw 5.2vw 3.2vw;
-}
-
-.footerColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 24%;
-  gap: 1vw;
-}
-
-.footerColumn h2,
-.footerColumn a {
-  color: #fff;
-  font-size: 1vw;
-  font-weight: 400;
-  line-height: 1.25;
-  text-decoration: none;
-}
-
-.footerColumn p {
-  color: #8c8c8c;
-  font-size: 0.88vw;
-  line-height: 1.25;
-  margin: 0 0 0.5vw;
-}
-
-.footerSubscribe {
-  width: 31%;
-}
-
-.footerSubscribe form {
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
-  width: 100%;
-  margin-top: 0.4vw;
-}
-
-.footerSubscribe input {
-  width: 21vw;
-  border: 0;
-  border-radius: 0.15vw;
-  background-color: #fff;
-  color: #202020;
-  font-family: inherit;
-  font-size: 0.82vw;
-  padding: 1vw 1.1vw;
-}
-
-.footerSubscribe button {
-  width: fit-content;
-  border: 0;
-  background-color: #60b500;
-  color: #fff;
-  font-family: inherit;
-  font-size: 0.82vw;
-  padding: 0.95vw 1.4vw;
-  cursor: pointer;
-  transition: opacity ease 0.3s;
-}
-
-.footerSubscribe button:hover {
-  opacity: 0.82;
-=======
 .adventureImageMain {
   width: 94%;
   aspect-ratio: 0.78 / 1;
@@ -1843,5 +1259,4 @@ body.modalOpen {
   border-color: #ffffff;
   background-color: transparent;
   outline: none;
->>>>>>> Stashed changes
 }
